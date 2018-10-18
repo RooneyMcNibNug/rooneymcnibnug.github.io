@@ -23,7 +23,7 @@ twitter_username: rooneymcnibnug
 github_username:  rooneymcnibnug
 
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 theme: minima
 # remote_theme: swanson/lagom
 plugins:
