@@ -2,6 +2,7 @@
 layout: page
 title: Links
 ---
+![](/img/foucault_dog.jpg)
  
 I file FOIA requests. A lot. I try to do most of them via [Muckrock](https://www.muckrock.com). Here is the link to [my
 Muckrock account](https://www.muckrock.com/accounts/profile/joliet_j/).
