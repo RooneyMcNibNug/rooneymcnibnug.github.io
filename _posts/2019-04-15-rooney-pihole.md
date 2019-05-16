@@ -1,9 +1,11 @@
 ---
 layout: posts
 title:  "Pi-hole and Tracker Domain Enumeration (For Fun and _Not_ Profit) - Part I"
+categories: [privacy]
+tags: [pihole, privacy]
 ---
 
-## Blocking ads & trackers at DNS level with PiHole
+## Blocking Ads & Trackers at DNS level with PiHole
 It's a great idea to use ad-blocking at browser level with addons like
 [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) and
 [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/), but
@@ -150,7 +152,7 @@ Anything that looks suspicious that _isn't_ logged like so:
 Some of the rabbit holes these non-blocked domains have led me down led to some pretty 
 bleak "marketing" imagery:
 
-MARKETING SCREENSHOT HERE
+![you can't have your pudding if you don't eat your meat](/img/late_stage_marketing.jpg)
 
 At this point, we have a bit of a decision to make in terms of how we want to be collecting
 these new domain to be blocked. Maybe per each root domain, we can choose to take one of
