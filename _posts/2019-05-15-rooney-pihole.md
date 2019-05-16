@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: default
 title:  "Pi-hole and Tracker Domain Enumeration (For Fun and _Not_ Profit) - Part I"
 categories: [privacy]
 tags: [pihole, privacy]
