@@ -5,6 +5,8 @@ categories: [privacy]
 tags: [pihole, privacy]
 ---
 
+# Pi-hole and Tracker Domain Enumeration (For Fun and _Not_ Profit) - Part I
+
 ## Blocking Ads & Trackers at DNS level with PiHole
 
 It's a great idea to use ad-blocking at browser level with addons like [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) and [Privacy Possum](https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/), but for casting a wider net around general marketing trackers on your network you should consider something closer to the router. This is where [Pi-hole](https://pi-hole.net/) comes in.
