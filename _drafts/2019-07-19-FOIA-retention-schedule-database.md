@@ -5,12 +5,15 @@ categories: [FOIA]
 tags: [FOIA, transparency]
 ---
 
-A big part of doing public records requests is research beforehand. For a lot of
+A big part of doing public records requests is the research. For a lot of
 the FOIAs I've filed, research has involved finding the relevant forms for the
 question(s) I want to answer. Fortunately, many agency websites and general .gov 
 pages have links to these retention policies handy. Unfortunately, it is hard to
 find certain city or lower-level government agencies who's record may differ somewhat
-from the other state records retention policies.
+from the other state records retention policies. Furthemore, these policy documents are
+scattered all over the web - sometimes seemingly even not publicly available.
 
 As I have yet to find a pirsuit dedicated to collecting and listing records retention
 policies through-out the United States, I've decided to start doing so here.
+
+
