@@ -16,8 +16,9 @@ from the other state records retention policies. Furthemore, these policy docume
 scattered all over the web - sometimes seemingly even not yet publicly available.
 
 As I have yet to find a pursuit dedicated to collecting and listing records retention 
-policies through-out the United States, I've decided to start doing so here. 
+policies through-out the United States on a "lower level", I've decided to start doing so 
+[here](https://github.com/RooneyMcNibNug/FOIA/blob/master/Research/agency_records_retention_db.csv). 
 
-
+Through a combination 
 
 https://raw.githubusercontent.com/RooneyMcNibNug/FOIA/master/Research/agency_records_retention_db.csv
