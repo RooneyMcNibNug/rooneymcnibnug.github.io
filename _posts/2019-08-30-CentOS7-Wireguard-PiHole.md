@@ -306,10 +306,11 @@ I recommend seaching for lists you want on sites like [FilterLists](https://filt
 
 So now you have your own personal VPS to tunnel into on the road, with DNS-level ad and tracker blocking as well. Neat! However, as quick painless as this has been, please do take the following into consideration as you continue to use this setup:
 
-* Keep your CentOS system and underlying packages up to date by running ```yum upgrade``` when applicable
-* Keep your Pi-hole services up to date by running ```pihole -up``` once and a while (you can check if there is an update to your service versions by running ```pihole -v``` first)
-* Check you Android or iOS Wireguard app for updates
+* Keep your CentOS system and underlying packages up to date by running ```yum upgrade``` when applicable.
+* Keep your Pi-hole services up to date by running ```pihole -up``` once and a while (you can check if there is an update to your service versions by running ```pihole -v``` first).
+* Check you Android or iOS Wireguard app for updates.
 * You can always turn wireguard off server-side if you need to with ```wg-quick down```
 * Take a look at ```netstat -tupln``` on CentOS to see if network settings are to your liking.
+* If you're interested in preserving a bit of privacy while using Pi-hole, you can always turn off logging with ```pihole -l off``` from the VM.
 
 Happy browsing!
