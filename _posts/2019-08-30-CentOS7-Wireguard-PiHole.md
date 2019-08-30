@@ -73,7 +73,7 @@ interface: wg0
   listening port: 90210
   ```
   
-If things looks different than this, we might need to make sure our Wireguard install didn't go haywire or that we didn't make any mistakes with the key generation process. If ```wg-quick up``` went without errors, we are likely good and can down the service for now:
+If things look different than this, we might need to make sure our Wireguard install didn't go haywire or that we didn't make any mistakes with the key generation process. If ```wg-quick up``` went without errors, we are likely good and can down the service for now:
   
 ```console
 [root@vps ~]# wg-quick down wg0
