@@ -7,6 +7,7 @@ tags: [linux, privacy, pihole, wireguard]
 
 # A CentOS VPS with Wireguard and PiHole
 
+![header_img](/img/centos_wg_pihole.png)
 I've evangilized how great I think both [Pi-hole](https://pi-hole.net/) and [Wireguard](https://www.wireguard.com/) are [in a previous post of mine](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html), where I explained how useful a combination of the two can be as a somehwat artisinal Virtual Private Server. I personally like this setup because it gives you full server access/permissions to a VPS service (at a low cost), something impossible to get with most managed VPN providers out there, while also an extremely easy and agreeable client setup.
 
 ## Getting CentOS 7 set up as VPS host
@@ -166,7 +167,7 @@ peer: ~PUBLIC_KEY_ON_MOBILE~
   
 Awesome, we can see that we have a handshake packets being received! As long as we see this going through, and we ensure that traffic is properly tunneling to the VM via Wireguard, we can now being to start setting up Pi-hole on the VM.
   
-##  Preparing for Pi-hole installation
+##  Preparing CentOS for Pi-hole installation
 
 Before we go and install Pi-hole to our CentOS host, let's first take note of some of our network detaisl - particularly the IP for the ```wg0``` interface:
 
@@ -186,11 +187,13 @@ Let's remember this ```inet scope``` output portion. In CentOS we also need to e
 [root@vps ~]# touch /etc/sysconfig/network-scripts/ifcfg-wg0
 ```
 
----------------------------------------
+Another slightly CentOS-specific thing we need to take into consideration is working with selinux, which comes installed by default on the OS. [According to Pi-hole developers](https://github.com/pi-hole/pi-hole/issues/752#issuecomment-513524149), selinux currently causes some issues with parts of Pi-hole. This means that having it in its default "enforcing" mode will cause issues here. This _does not_ mean that we should completely disable selinux - in fact, this is almost always an improper approach to issues with selinux.
 
-# I think we have to change SELinux status to "permissive" (https://github.com/pi-hole/pi-hole/issues/752#issuecomment-513524149). We might want to do this permanently for the system:
-$ cd /etc/sysconfig/
-$ nano selinux
+Instead, let's set the mode on selinux here from "enforcing" to "permissive". This will not actively block things flagged up in your local selinux policy, but instead will still log any instances of policy violations:
+
+```console
+[root@vps ~]# cd /etc/sysconfig/
+[root@vps ~]# cd nano selinux
     # This file controls the state of SELinux on the system.
     # SELINUX= can take one of these three values:
     #     enforcing - SELinux security policy is enforced.
@@ -202,8 +205,12 @@ $ nano selinux
     #     minimum - Modification of targeted policy. Only selected processes are protected.
     #     mls - Multi Level Security protection.
     SELINUXTYPE=targeted
-$ reboot
-$ sestatus
+```
+
+Let's save that file and then ```reboot``` in order to allow the changes to go through. Once we've started back up we can check the selinux status:
+
+```console
+[root@vps ~]# sestatus
 SELinux status:                 enabled
 SELinuxfs mount:                /sys/fs/selinux
 SELinux root directory:         /etc/selinux
@@ -213,33 +220,93 @@ Mode from config file:          permissive
 Policy MLS status:              enabled
 Policy deny_unknown status:     allowed
 Max kernel policy version:      31
+```
 
-# You also need to provide wg0 as an interface name including your default gateway IP address such as 192.168.2.1 (this is different for every server, get & save your own by below command):
-$ ip r | grep default
+Looks set now. I encourage people to take a look at these logs from time to time. The live in ```/var/log/audit/audit.log``` on CentOS, so you can simply run ```cat /var/log/audit/audit.log | grep selinux``` at your desire.
 
-# Save these details and then start getting/running pihole install:
-$ wget -O basic-install.sh https://install.pi-hole.net
-$ bash basic-install.sh
+During the Pi-hole install, we will also need to provide ```wg0``` as an interface name including your default gateway IP address such as ```192.168.x.x``` - this will be different on every server, so let's get our's now by checking ```ip r | grep default``` and keep the output handy. After saving these details, its time to actually start installing Pi-hole.
 
-    #> Allow basic-install.sh to install php on your system
-    #> If you use Fedora or CentOS where SELinux is present and enforced, you may not be able to use the web admin. I'm okay        with this and continued the installation without fully disabling selinux.
-    #> Choose the "wg0" interface for pihole
-    #> Select DNS server
-    #> Select both 1pv4 and ipv6 protocols
-    #> Setup a static address (select "no" to default config to do this manually!)
-    #> Change static ipv4 in next section to the wireguard server IP - 10.8.0.1/24
-    #> Change gateway to your droplet's ("ip r | grep default" from earlier)
-    #> Accept settings after double checking
-    #> I chose to not install the web admin interface, since I can check and change things via ssh on this droplet
-    #> I opted out of installing lighttpd for now..
-    #> Installation should be underway
+## Installing Pi-hole
 
-# Time 2 test
-$ host eff.org 10.0.0.1
+If you don't have ```wget``` yet, please install it now as we will need it for getting the installer:
 
-# Now start using your phone and check these for a while
-$ pihole -t
-$ pihole -c
+```console
+[root@vps ~]# wget -O basic-install.sh https://install.pi-hole.net
+[root@vps ~]# bash basic-install.sh
+```
 
+Let's follow these steps through the installation process:
 
+* Allow basic-install.sh to install php on your system
+* Aince we are using CentOS where SELinux is present (even if not enforced), we may not be able to use the web admin. Again, we should continue the installation without this, even though we put SElinux in "permissive" mode. Pi-hole admin via the CLI is [pretty straight-forward](https://docs.pi-hole.net/core/pihole-command/).
+* Choose the ```wg0``` interface for pihole
+* Select a DNS provider/server
+* Select both ipv4 and ipv6 protocols
+* Setup a static address (select "no" to default config to do this manually!)
+* Change static ipv4 in next section to the wireguard server IP - ```10.8.0.1/24```
+* Change gateway to your droplet's (```ip r | grep default``` from earlier from earlier)
+* Accept settings after double checking
+* Let's choose to not install the web admin interface, since we can check and change things via ```ssh``` on this VM if we need to
+* We can also opt out of installing lighttpd for now if we'd like to avoid other issues
+* Installation should be underway at this point
+
+When the installation is done, we're just about set! Let's make sure that things look normal by checking DNS results from a known advertising domain that is on one of the default blocklists after Pi-hole install:
+
+```console
+[root@vps ~]# host track.adtrue.com 10.0.0.1
+Using domain server:
+Name: 10.0.0.1
+Address: 10.0.0.1#53
+Aliases: 
+
+track.adtrue.com has address 0.0.0.0
+track.adtrue.com has IPv6 address ::
+track.adtrue.com is an alias for adtrue-track-server-1082517350.us-west-2.elb.amazonaws.com.
+```
+
+Looks like we're blocking it based on the 0'd address there. Let's also check out pihole log from the VM while we browse from our mobile, so that we can see that things are coming through properly and also being affectively blocked:
+
+```console
+[root@vps ~]# pihole -t
+  [i] Press Ctrl-C to exit
+21:10:34 dnsmasq[]: query[A] settings.crashlytics.com from 10.0.0.2
+21:10:34 dnsmasq[]: /etc/pihole/gravity.list settings.crashlytics.com is 0.0.0.0
+21:10:35 dnsmasq[]: query[A] analytics.twitter.com from 10.0.0.2
+21:10:35 dnsmasq[]: /etc/pihole/gravity.list analytics.twitter.com is 0.0.0.0
+21:10:35 dnsmasq[]: query[A] e.crashlytics.com from 10.0.0.2
+21:10:35 dnsmasq[]: /etc/pihole/gravity.list e.crashlytics.com is 0.0.0.0
+21:10:37 dnsmasq[]: query[A] reports.crashlytics.com from 10.0.0.2
+21:10:37 dnsmasq[]: /etc/pihole/gravity.list reports.crashlytics.com is 0.0.0.0
+21:10:51 dnsmasq[]: query[A] e.crashlytics.com from 10.0.0.2
+21:10:51 dnsmasq[]: /etc/pihole/gravity.list e.crashlytics.com is 0.0.0.0
+21:10:58 dnsmasq[]: query[A] reports.crashlytics.com from 10.0.0.2
+21:10:58 dnsmasq[]: /etc/pihole/gravity.list reports.crashlytics.com is 0.0.0.0
+21:11:06 dnsmasq[]: query[A] e.crashlytics.com from 10.0.0.2
+21:11:06 dnsmasq[]: /etc/pihole/gravity.list e.crashlytics.com is 0.0.0.0
+21:11:20 dnsmasq[]: query[A] reports.crashlytics.com from 10.0.0.2
+21:11:20 dnsmasq[]: /etc/pihole/gravity.list reports.crashlytics.com is 0.0.0.0
+21:11:33 dnsmasq[]: query[A] e.crashlytics.com from 10.0.0.2
+21:11:33 dnsmasq[]: /etc/pihole/gravity.list e.crashlytics.com is 0.0.0.0
+21:11:35 dnsmasq[]: query[A] connectivitycheck.gstatic.com from 10.0.0.2
+^C
+```
+This output has been slightly edited here for privacy's sake, but you get the point. You might be surprised how often some of your mobile apps phone to ad domains (or you might not be surprised..)
+
+We can check the dashbaord for more high-level infomration with the ```pihole -c``` command on the VM.
+
+## Adding Pi-hole blocklists
+
+At this point you can feel free to add any community-built ad/tracking blocklists to your Pi-hole config. The easiest way to do this from the VM is by adding each URL as a line to the ```/etc/pihole/adlists.list``` file and then updating Gravity with ```pihole -g```. 
+
+Feel free to add [my list](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt) if you'd like.
+
+## Final considerations
+
+So now you have your own personal VPS to tunnel into on the road, with DNS-level ad and tracker blocking as well. Neat! However, as quick painless as this has been, please do take the following into consideration as you continue to use this setup:
+
+* Keep your CentOS system and underlying packages up to date by running ```yum upgrade``` when applicable
+* Keep your Pi-hole services up to date by running ```pihole -up``` once and a while (you can check if there is an update to your service versions by running ```pihole -v``` first)
+* Check you Android or iOS Wireguard app for updates
+* You can always turn wireguard off server-side if you need to with ```wg-quick down```
+* Take a look at ```netstat -tupln``` on CentOS to see if network settings are to your liking.
 
