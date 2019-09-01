@@ -29,7 +29,7 @@ The next step is to install Wireguard on CentOS. At the time of writing this, Wi
 [root@vps ~]# yum install epel-release
 [root@vps ~]# yum install wireguard-dkms wireguard-tools
 ```
-Once the packages have finished downloading and installing, we need to createa a directory for the Wireguard config files and generate some keys:
+Once the packages have finished downloading and installing, we need to create a directory for the Wireguard config files and generate some keys:
 
 ```console
 [root@vps ~]# mkdir /etc/wireguard
@@ -73,7 +73,7 @@ interface: wg0
   listening port: 90210
   ```
   
-If things look different than this, we might need to make sure our Wireguard install didn't go haywire or that we didn't make any mistakes with the key generation process. If ```wg-quick up``` went without errors, we are likely good and can down the service for now:
+If things look very different than this, we might need to make sure our Wireguard install didn't go haywire or that we didn't make any mistakes with the key generation process. If ```wg-quick up``` went without errors, we are likely good and can down the service for now:
   
 ```console
 [root@vps ~]# wg-quick down wg0
@@ -82,7 +82,7 @@ If things look different than this, we might need to make sure our Wireguard ins
 
 ## Installing and configuring for mobile clients
 
-One of the things I absolutely love about Wireguard is their mobile app. No more finicking with OpenVPN configurations! The Wireguard development team has an created great apps for both [Android](https://play.google.com/store/apps/details?id=com.wireguard.android) and [iOS](https://apps.apple.com/us/app/wireguard/id1441195209) systems. The configuration process for a mobile phone as a client to our currently existing server should be relatively the same for both platforms, so let's set this tunnel config up step by step for posterity:
+One of the things I absolutely love about Wireguard is their mobile app. No more finicking with OpenVPN configurations! The Wireguard development team has created apps for both [Android](https://play.google.com/store/apps/details?id=com.wireguard.android) and [iOS](https://apps.apple.com/us/app/wireguard/id1441195209) systems. The configuration process for a mobile phone as a client to our currently existing server should be relatively the same for both platforms, so let's set this tunnel config up step by step here for posterity:
 
 * Click the ```+``` button to create a new config
   + “Create from scratch”
@@ -123,7 +123,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/wg-quick@wg0.se
 
 ## Traffic forwarding and routing configurations
 
-Now we need to make sure that the traffic from Wireguard devices to this VM is re-routed to the proper interface. Let's run ```ip addr show``` to ensure that ```eth0``` is up and the proper name of the active interface connection here. Let's then pop open ```wg0.conf``` again and append the following ```iptables``` rules for proper traffic routing:
+Now we need to make sure that the traffic from Wireguard devices to this VM is re-routed to the proper interface. Let's run ```ip addr show``` to ensure that ```eth0``` is up and the proper name of the active interface connection. Let's then pop open ```wg0.conf``` again and append the following ```iptables``` rules for proper traffic routing:
 
  ```console
 [root@vps ~]# nano /etc/wireguard/wg0.conf
@@ -187,7 +187,7 @@ Let's remember this output portion. In CentOS we also need to ensure that there 
 [root@vps ~]# touch /etc/sysconfig/network-scripts/ifcfg-wg0
 ```
 
-Another slightly CentOS-specific thing we need to take into consideration is working with [SElinux](https://wiki.centos.org/HowTos/SELinux), which comes installed by default on the OS. [According to Pi-hole developers](https://github.com/pi-hole/pi-hole/issues/752#issuecomment-513524149), SElinux currently causes some issues with parts of Pi-hole. This means that having it in its default "enforcing" mode will cause issues here. This _does not_ mean that we should completely disable selinux - in fact, this is almost always an improper approach to torubleshooting issues with SElinux.
+Another slightly CentOS-specific thing we need to take into consideration is working with [SElinux](https://wiki.centos.org/HowTos/SELinux), which comes installed by default on the OS. [According to Pi-hole developers](https://github.com/pi-hole/pi-hole/issues/752#issuecomment-513524149), SElinux currently causes some issues with parts of Pi-hole. This means that having it in its default "enforcing" mode will cause issues here. This _does not_ mean that we should completely disable SElinux - in fact, this is almost always an improper approach to torubleshooting issues with SElinux.
 
 Instead, let's set the mode on SElinux here from "enforcing" to "permissive". This will not actively block things flagged up in your local SElinux policy, but instead will still log any instances of policy violations:
 
@@ -222,7 +222,7 @@ Policy deny_unknown status:     allowed
 Max kernel policy version:      31
 ```
 
-Looks set now. I encourage people to take a look at these logs from time to time. The live in ```/var/log/audit/audit.log``` on CentOS, so you can simply run ```cat /var/log/audit/audit.log | grep selinux``` at your desire.
+Looks set now. I encourage people to take a look at these logs from time to time. The live in ```/var/log/audit/audit.log``` on CentOS, so you can simply run ```cat /var/log/audit/audit.log | grep selinux``` at your convenience.
 
 During the Pi-hole install, we will also need to provide ```wg0``` as an interface name including your default gateway IP address such as ```192.168.x.x``` - this will be different on every server, so let's get our's now by checking ```ip r | grep default``` and keep the output handy. After saving these details, its time to actually start installing Pi-hole.
 
@@ -294,7 +294,7 @@ Looks like we're blocking it successfully, based on the 0'd address there. Let's
 ```
 This output has been slightly edited here for privacy's sake, but you get the point. You might be surprised how often some of your mobile apps phone to ad domains (or you might not be surprised..).
 
-We can check the dashbaord for more high-level infomration with the ```pihole -c``` command on the VM.
+We can check the Pi-hole CLI dashboard for more high-level infomration with the ```pihole -c``` command on the VM.
 
 ## Adding Pi-hole blocklists
 
