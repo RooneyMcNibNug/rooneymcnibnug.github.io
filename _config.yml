@@ -24,7 +24,8 @@ github_username:  rooneymcnibnug
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-chalk
+# theme: minima
 # remote_theme: swanson/lagom
 plugins:
   - jekyll-feed
