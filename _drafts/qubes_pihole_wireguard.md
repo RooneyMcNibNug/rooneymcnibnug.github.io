@@ -18,6 +18,17 @@ tags: [linux, privacy, security, pihole, wireguard, qubes]
 - This write-up handles setting up a Wireguard AppVM in debiab, but I'd prefer to tweak it to handle it in Fedora: https://github.com/tasket/Qubes-vpn-support/wiki/Wireguard-VPN-connections-in-Qubes-OS
 
 - Doing it in Fedora should be easy, as Wireguard has a copr repo 
+
+![AppVM creation](/img/pihole-appvm.png)
+
 ```console
-[usr@appVM ~]$ sudo dnf copr enable jdoss/wireguard
+[user@fedora-30 ~]$ sudo dnf copr enable jdoss/wireguard
+[user@fedora-30 ~]$ sudo dnf install wireguard-dkms wireguard-tools
+```
+
+```console
+[user@pihole-VPN ~]$ sudo mkdir /etc/wireguard
+[user@pihole-VPN ~]$ cd /etc/wireguard
+[user@pihole-VPN ~]$ wg genkey | tee clientprv | wg pubkey > clientpub
+[user@pihole-VPN ~]$ nano /etc/wireguard/wg0.conf
 ```
