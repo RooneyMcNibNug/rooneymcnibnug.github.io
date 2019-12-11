@@ -15,7 +15,7 @@ tags: [linux, privacy, security, pihole, wireguard, qubes]
 
 - There is already a pretty good write-up on setting up an AppVM for a VPN connection, and a recent one at that: https://micahflee.com/2019/11/using-mullvad-in-qubes/
 
-- This write-up handles setting up a Wireguard AppVM in debiab, but I'd prefer to tweak it to handle it in Fedora: https://github.com/tasket/Qubes-vpn-support/wiki/Wireguard-VPN-connections-in-Qubes-OS
+- This write-up handles setting up a Wireguard AppVM in debian, but I'd prefer to tweak it to handle it in Fedora: https://github.com/tasket/Qubes-vpn-support/wiki/Wireguard-VPN-connections-in-Qubes-OS
 
 - Doing it in Fedora should be easy, as Wireguard has a copr repo 
 
@@ -32,3 +32,8 @@ tags: [linux, privacy, security, pihole, wireguard, qubes]
 [user@pihole-VPN ~]$ wg genkey | tee clientprv | wg pubkey > clientpub
 [user@pihole-VPN ~]$ nano /etc/wireguard/wg0.conf
 ```
+generate the keys , yada yada
+
+^ really can't all of the above just be 'refer to previous post' here?
+
+- make sure to share use cases for this any why it is import to decide carefully which VMs to link to this network option.
