@@ -34,6 +34,12 @@ tags: [linux, privacy, security, pihole, wireguard, qubes]
 ```
 generate the keys , yada yada
 
-^ really can't all of the above just be 'refer to previous post' here?
+^ really can't all of the above just be 'refer to previous post' here? https://rooneymcnibnug.github.io/privacy/2019/08/30/CentOS7-Wireguard-PiHole.html
 
 - make sure to share use cases for this any why it is import to decide carefully which VMs to link to this network option.
+
+- build the client wg configuration in the root AppVM directory
+
+- remember to add your AppVM public key and allow it through wireguard on the erver via ```wg set wg0 peer <client-public-key> allowed-ips 10.10.0.2/32```
+
+- official Qubes VPN documentation: https://www.qubes-os.org/doc/vpn/
