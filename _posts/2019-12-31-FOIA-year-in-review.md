@@ -14,7 +14,7 @@ of time on New Year's Eve to go over some of the details of my year with FOIA. A
 I wish I'd done a bit differently. I hope some of these might help others working with public records requests in journalism, activism, and other realms.
 
 Let's start with some metric-based analysis and insights (I will only be covering details from [Muckrock](https://www.muckrock.com) data through 2019, as 97%
-of my requestes were made through their platform):
+of my requests were made through their platform):
 
 * In 2019 I made **183 total FOIA requests** from my Muckrock account
 * **41 of 183** or **22.4% of them were completed by the respective agency**
