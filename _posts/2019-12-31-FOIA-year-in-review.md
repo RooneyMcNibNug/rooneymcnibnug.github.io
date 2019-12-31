@@ -13,10 +13,10 @@ This past year has definitely been the most active for me in regards to public r
 of time on New Year's Eve to go over some of the details of my year with FOIA. A time for reflections, things that went well and things
 I wish I'd done a bit differently. I hope some of these might help others working with public records requests in journalism, activism, and other realms.
 
-Let's start with some metric-based analysis and insights (I will only be covering details from [Muckrock](https://www.muckrock.com) data through 2019, as 97%
+Let's start with some metric-based analysis and insights (I will only be covering details from [MuckRock](https://www.muckrock.com) data through 2019, as 97%
 of my requests were made through their platform):
 
-* In 2019 I made **183 total FOIA requests** from my Muckrock account
+* In 2019 I made **183 total FOIA requests** from my MuckRock account
 * **41 of 183** or **22.4% of them were completed by the respective agency**
 * **23 of the total records have not even received an acknowledgement** from the agency at hand
 * Only **11 of the total request were outright rejected**
@@ -40,7 +40,7 @@ I'm looking to do more requests like this in the future, as I find them importan
 
 ## Things I've learned
 
-* **Organization is key** - With everything else going on in life, its often hard to keep track of some of my requests. The status of a request sent out by email or letter can easily fade away and get lost. Using Muckrock alone has really made the process a lot easier, especially with features like their built-in filtering tools and automatic requests for updates. (please consider supporting Muckrock [via donation](https://www.muckrock.com/donate/)!)
+* **Organization is key** - With everything else going on in life, its often hard to keep track of some of my requests. The status of a request sent out by email or letter can easily fade away and get lost. Using MuckRock alone has really made the process a lot easier, especially with features like their built-in filtering tools and automatic requests for updates. (please consider supporting MuckRock [via donation](https://www.muckrock.com/donate/)!)
 
 * **Talk to other FOIA nerds** - I've been very lucky to have been able to quickly ask for opinions, tips, and gain insights from other requesters and it has helped me learn a lot about the process. There are a [some](https://www.reddit.com/r/foia/) [great](https://www.muckrock.com/slack/) platforms available for people to communicate online, but I would hilghly recommend people who are interested in FOIA to also get involved in local in-person get togethers inclusing trainings, meetups, etc. There is always something new to learn.
 
@@ -48,9 +48,9 @@ I'm looking to do more requests like this in the future, as I find them importan
 
 * **Appeal more** - I wish I had gone with my gut and appealed more on a lot of my requests before it had become too late. As I've learned a lot more about exemption types this year, its become clear that agencies are often eager to deny infromation within responsive records or redact very liberally. In the past, appealing has helped me expose unjustifiable exemption uses and [freed up documents I've been looking for](https://www.vice.com/en_us/article/d3k5pv/predpol-predictive-policing-broken-windows-theory-chicago-lucy-parsons). Its an option I need to use more when I'm in doubt.
 
-* **Sqeuaky Wheel Calls** - Unfortunately, a lot of agencies would either never respond or even seemingly dignify the existence of my requests from Muckrock. This would have me calling the FOIA officers or main numbers for the agency's proper records department. A lot of the time this worked in getting the ball rolling or sometimes forcing people to track down my initial request. Other times I'd become lost in a void of call transfers and voicemails. Its a tool there to use if you're not getting a response after a while, nonetheless.
+* **Sqeuaky Wheel Calls** - Unfortunately, a lot of agencies would either never respond or even seemingly dignify the existence of my requests from MuckRock. This would have me calling the FOIA officers or main numbers for the agency's proper records department. A lot of the time this worked in getting the ball rolling or sometimes forcing people to track down my initial request. Other times I'd become lost in a void of call transfers and voicemails. Its a tool there to use if you're not getting a response after a while, nonetheless.
 
-* **Request "portals" != convenience** - I can't express enough how hard of a time I have had with 3rd-party FOIA portals that are supposed to "automate" responses and processing of requests on behalf of agencies. They have really gummed up the wheels of a lot of my projects in Muckrock. I would say if you run into any agency that has one of these and you start getting buried in weird automated responses with your request, it is best to use just call or use email to process things further (please also make notes of these in Muckrock when you can, using the "Get Help" feature in the request thread).
+* **Request "portals" != convenience** - I can't express enough how hard of a time I have had with 3rd-party FOIA portals that are supposed to "automate" responses and processing of requests on behalf of agencies. They have really gummed up the wheels of a lot of my projects in MuckRock. I would say if you run into any agency that has one of these and you start getting buried in weird automated responses with your request, it is best to use just call or use email to process things further (please also make notes of these in MuckRock when you can, using the "Get Help" feature in the request thread).
 
 ## Other thoughts and resources
 
