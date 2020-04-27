@@ -26,7 +26,11 @@ which I based on Fedora. I achieved this with a quick clone from `dom0`:
 ```
 
 This TemplateVM can be stripped of a lot of non-essential packages like `thunderbird` and `gimp`, since we are only going to
-use it for minimal document management.
+use it for minimal document management. If you would rather, you could just get a fresh Fedora template generated to work from (or [reinstall](https://www.qubes-os.org/doc/reinstall-template/)) instead of cloning an existing one:
+
+```console
+[user@dom0 ~]$ sudo qubes-dom0-update qubes-template-fedora-30
+```
 
 I wanted to make sure this VM had DisposableVMs enabled, since I really don't trust printers:
 
