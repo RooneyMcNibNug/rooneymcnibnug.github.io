@@ -16,20 +16,12 @@ documenting for posterity.
 I followed some of the advice featured in the [Qubes Docs link pertaining to a network printer setup](https://www.qubes-os.org/doc/network-printer/)
 but wanted to tweak some things to my own liking.
 
-## Getting Started
+## Setting up a TemplateVM
 
-The printer I am using is a Cannon PIXMA Scanner/Printer model. I followed Qubes' advice in creating a TemplateVM for the printer drivers,
-which I based on Fedora. I achieved this with a quick clone from `dom0`:
-
-```console
-[user@dom0 ~]$ qvm-clone fedora-30 printer-template
-```
-
-This TemplateVM can be stripped of a lot of non-essential packages like `thunderbird` and `gimp`, since we are only going to
-use it for minimal document management. If you would rather, you could just get a fresh Fedora template generated to work from (or [reinstall](https://www.qubes-os.org/doc/reinstall-template/)) instead of cloning an existing one:
+For a base, I wanted something simple. This TemplateVM doesn't need  packages like `thunderbird` and `gimp`, since we are only going to use it for minimal document management. For this reason I chose building a [Minimal TemplateVM](https://www.qubes-os.org/doc/templates/minimal/) for this:
 
 ```console
-[user@dom0 ~]$ sudo qubes-dom0-update qubes-template-fedora-30
+[user@dom0 ~]$ sudo qubes-dom0-update qubes-template-fedora-30-minimal
 ```
 
 I wanted to make sure this VM had DisposableVMs enabled, since I really don't trust printers:
@@ -38,4 +30,10 @@ I wanted to make sure this VM had DisposableVMs enabled, since I really don't tr
 [user@dom0 ~]$ qvm-create --template printer-template --label red document-print-dvm
 [user@dom0 ~]$ qvm-prefs document-print-dvm template_for_dispvms True
 [user@dom0 ~]$ qvm-features document-print-dvm appmenus-dispvm 1
+```
+
+Since this is a Minimal TemplateVM, I wanted to make sure to add some tools imperative to printing and generally manageing different document types. I set up `qubes-core-agent-passwordless-root` first following [these instructions](https://www.qubes-os.org/doc/vm-sudo/). Afterwards I added these packages to the TemplateVM:
+
+```console
+[user@printer-template ~]$ sudo dnf install qubes-pdf-converter qubes-img-converter libreoffice vim envice
 ```
