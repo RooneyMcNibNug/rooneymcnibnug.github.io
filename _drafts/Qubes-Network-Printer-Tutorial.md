@@ -27,26 +27,11 @@ which I based on Fedora. I achieved this with a quick clone from `dom0`:
 
 For a base, I wanted something simple. This TemplateVM doesn't need  packages like `thunderbird` and `gimp`, since we are only going to use it for minimal document management. This required a cursory look at `dnf list installed` to remove whatever packages I deemed unneccessary.
 
-I also wanted to make sure this VM had DisposableVMs enabled, since I really don't trust printers:
-
-```console
-[user@dom0 ~]$ qvm-create --template printer-template --label red document-print-dvm
-[user@dom0 ~]$ qvm-prefs document-print-dvm template_for_dispvms True
-[user@dom0 ~]$ qvm-features document-print-dvm appmenus-dispvm 1
-```
-
 I wanted to make sure to add some tools imperative to printing and generally manageing different document types, so I added these particular packages to the TemplateVM:
 
 ```console
 [user@printer-template ~]$ sudo dnf install system-config-printer qubes-pdf-converter qubes-img-converter iputils
 ```
-
-## Networking
-
-I needed to make sure I could hit the network printer, so i enabled networking on the TemplateVM. I set the networking VM to `sys-firewall`. For maximum security, I figured if I wanted to after the setup I  could lock down network access to internal network onlyby creating the fillowing firewall rule: 
- ![firewalld](/img/qvm_print_firewall.png)
-
-The problem with this is a lack of access to the "outside world" means a lack of updats, so I opted to keep things more open.
 
 ## Setting up CUPS
 
@@ -56,3 +41,8 @@ After getting the TmplateVM settled, I started the Common UNIX Printing System c
 ```console
 [user@printer-template ~]$ system-config-printer
 ```
+- Download printer drivers in seperate VM
+- Move to printer vm
+- load manually into CUPs config
+
+* this would all just be better to do on a standaloneVM at this point..
