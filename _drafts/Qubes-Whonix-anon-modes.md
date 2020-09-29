@@ -15,9 +15,9 @@ I love QubesOS. I use it as a daily driver for a lot of things at this point, es
 
 I was speaking with one friend in particular about how they manage anonymization schemes with AppVMs, and they told me about how they rely on following guidelines put forth by Whonix in their wiki (located on the Whonix Anonymity Modes page). This idea makes a lot of sense to me, and I was eager to try it out.
 
-# Understanding Anonimity Mode levels
+### Understanding Anonimity Mode levels
 
-# Anonimity Mode use-cases
+### Anonimity Mode use-cases
 
-# Generating the AppVMs with Salt
+### Generating the AppVMs with Salt
 
