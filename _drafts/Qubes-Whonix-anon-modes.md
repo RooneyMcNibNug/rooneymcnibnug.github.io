@@ -19,5 +19,6 @@ I was speaking with one friend in particular about how they manage anonymization
 
 ### Anonimity Mode use-cases
 
+
 ### Generating the AppVMs with Salt
 
