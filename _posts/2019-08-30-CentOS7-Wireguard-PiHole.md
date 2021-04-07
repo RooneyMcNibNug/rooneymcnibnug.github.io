@@ -193,7 +193,7 @@ Instead, let's set the mode on SElinux here from "enforcing" to "permissive". Th
 
 ```console
 [root@vps ~]# cd /etc/sysconfig/
-[root@vps ~]# cd nano selinux
+[root@vps ~]# sudo nano selinux
     # This file controls the state of SELinux on the system.
     # SELINUX= can take one of these three values:
     #     enforcing - SELinux security policy is enforced.
