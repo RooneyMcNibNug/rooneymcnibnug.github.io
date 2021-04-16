@@ -4,5 +4,9 @@
 
 layout: home
 ---
+<head>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+</head>
+
 ![](/img/insect_flower_long.jpg)
 _“Every hundred feet the world changes.”_ ― Roberto Bolaño, 2666
