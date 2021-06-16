@@ -32,6 +32,49 @@ Whonix's documentation is careful to define the clear differences between Anonym
 > - __Anonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, nor to associate any identifier with it.
 > - __Pseudonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, but it can be associated with an identifier.
 
+The key here is not to solely think about things like originating IP, but also unique identifiers used in tracking cookies and other technology. There is also the obvious act of logging into an account with a username and password turning what could have been an "anonymous" connection into a technically "pseuudonymous" one - it is a connection that does not reveal your actual originating IP, but _does_ reveal your user information.
+
+A poigniant quote from a developer of the now defunct Liberte Linux drives the point a bit further:
+
+> "I have not seen a compelling argument for anonymity, as opposed to pseudonymity. Enlarging anonymity sets is something that Tor developers do in order to publish incremental papers and justify funding. Most users only need to be pseudonymous, where their location is hidden. Having a unique browser does not magically uncover user's location, if that user does not use that browser for non-pseudonymous activities. Having good browser header results on anonymity checkers equally does not mean much, because there are many ways to uncover more client details (e.g., via Javascript oddities)."
+
+We get the point! This is where the different Whonix Mix Anonimity Modes come into play:
+
+> Mode 1: Anonymous User; Any Recipient
+
+    - Scenario: Posting messages anonymously in a message board, mailing list, comment field, forum and so on.
+    - Scenario: Whistleblowers, activists, bloggers and similar users.
+    - The user is anonymous.
+    - The real IP address / location stays hidden.
+    - Location privacy: The user's location remains secret.
+
+> Mode 2: User Knows Recipient; Both Use Tor
+
+    - Scenario: The sender and recipient know each other and both use Tor.
+    - Communication occurs without any third party being aware of this activity or having knowledge that the the 
+      sender and recipient are communicating with each other.
+    - The user is not anonymous. [5]
+    - The user's real IP address / location stays hidden.
+    - Location privacy: The user's location remains secret.
+
+> Mode 3: User Non-anonymous and Using Tor; Any Recipient
+
+    - Scenario: Logging in with a real name into any service like webmail, Twitter, Facebook and others.
+    - The user is obviously not anonymous. As soon as the real name is used for the account login, the website 
+      knows the user's identity. Tor can not provide anonymity in these circumstances.
+    - The user's real IP address / location stays hidden.
+    - Location privacy. The user's location remains secret. [6]
+
+> Mode 4: User Non-anonymous; Any Recipient
+
+    - Scenario: Normal browsing without Tor.
+    - The user is not anonymous.
+    - The user's real IP address / location is revealed.
+    - The user's location is revealed.
+
+Think of these as use cases based on threat models, but also - in the context - as VMs. These scenarios can work quite well paired with respective AppVMs on a QubesOS system. For instance - where a Mode 1-based VM is a generated AppVM titled `Mode-1` using the `Whonix-15` template-VM.
+
+But we can do one better here - we can get a freshly isntalled SubesOS system off the ground with an AppVM for each of these Modes using infrastructure management via Salt.
 
 ### Generating the AppVMs with Salt
 
