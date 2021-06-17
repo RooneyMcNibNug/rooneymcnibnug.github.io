@@ -118,4 +118,7 @@ Pretty simple, huh? It is basically just pointing to the `.sls` files and will t
 - Let's make sure we see the `.top` file we created for this in the output after this ommand, which is used to check enabled `.top` files: ```qubesctl top.enabled```
 - If we see it there, we are ready to apply the build of the AppVMs now with the following command: ```qubesctl --show-output --skip-dom0 --all state.highstate```
 - Notice that we are getting the verbose output with the added parameters in this command, and also telling the system to not worry about `dom0` states, since we are only focused on building AppVMs here.
-- You should now see the VMs populated on your Qubed Manager!
+- You should now see the VMs populated on your Qubes VM Manager!
+
+
+### Wearing your different hats
