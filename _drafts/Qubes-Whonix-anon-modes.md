@@ -121,4 +121,6 @@ Pretty simple, huh? It is basically just pointing to the `.sls` files and will t
 - You should now see the VMs populated on your Qubes VM Manager!
 
 
-### Wearing your different hats
+### Class of characters
+
+
