@@ -112,7 +112,7 @@ base:
 
 Pretty simple, huh? It is basically just pointing to the `.sls` files and will take the underlying metadata of each to build all of these AppVMs. So let's get started with pushing this out with these following steps:
 
-- It is best not to copy things _to_ `dom0` with the QubesOS tools to do so, as you woudl normally do from AppVM to AppVM - this has been [noted as a security risk](https://www.qubes-os.org/doc/copy-from-dom0/). Knowing this, it might be best to clone the repo here and copy the underlying files in a bit more of a mnaul way here...
+- It is best not to copy things _to_ `dom0` with the QubesOS tools to do so, as you would normally do from AppVM to AppVM - this has been [noted as a security risk](https://www.qubes-os.org/doc/copy-from-dom0/). Knowing this, it might be best to clone the repo here and copy the underlying files in a bit more of a manual way here...
 - You will want to put your `.top` file somewhere such as `/srv/salt/qubesmodes.top` and your `.sls` fiels in the same directory, like so: `/srv/salt/mode-1-vm.sls`
 - Enable the `.top` file from `dom0` terminal with the following command: ```qubesctl top.enable qubesmodes```
 - Let's make sure we see the `.top` file we created for this in the output after this ommand, which is used to check enabled `.top` files: ```qubesctl top.enabled```
@@ -123,4 +123,16 @@ Pretty simple, huh? It is basically just pointing to the `.sls` files and will t
 
 ### Class of characters
 
+So we have our generated AppVMs based on the Whonix Mixed Anonymity Modes. Now what? Well, we obviously want to start installing some applications to use for each, based on the aformentioned Whonix documentation.
 
+While we really haven't pre-configured applications for use here from the start, we mainly wanted to get a "shell" for each AppVM going - from there on, it is up to you to decide what applications you will use for each Mode. However, it is definitely an option to adjust the Salt files to include these to install automatically as well - Kushal Das goes more into this in [one of his great blog posts](https://kushaldas.in/posts/maintaining-your-qubes-system-using-salt-part-1.html), which can serve as a guide to do this at an earlier stage with the management stack.
+
+In this case, let's have a think at some of the options and apps well reserved for each one of these modes.
+
+Here are some considerations to dabble with:
+
+- Installing [OnionShare](https://onionshare.org/) on `sys-whonix` to use withn the `mode-1` AppVm as a tool to send/recive files or quickly host file anonymously via the tor network (this can be a bit more tricky to get set up in a Qubes/WHonix environment compared to a standard system - [this article](https://www.whonix.org/wiki/OnionShare) goes over some of the intracacies and should serve well with setting things up)
+- Using [Hexchat](https://hexchat.github.io/) in either `mode-1` for an ephermeral usage wher you will not retain your presence/username in a particular channel, or `mode-3` if their is not a concern about identity but the user wishes some of their ocnnection details to remain somewhat private (Whonix has a [good guide for this too](https://www.whonix.org/wiki/HexChat))
+- Pseudonymize things like emails, form submissions, records requests, etc. by using a dedicated email in `mode 2` or (more likely) `mode-3` - and effectively strip out most actual identifying metadata attached.
+- Pseudonymize end-to-end encrypted communications with Signal with your `mode-3` AppVM (you can optionally [use a secondary phone number](https://theintercept.com/2017/09/28/signal-tutorial-second-phone-number/) and configure the application consulting [this guide](https://www.whonix.org/wiki/Signal))
+- Scrape data from public sites anonymously with your artisinally-crafted script in the `mode-1` terminal (your mileage may vary!)
