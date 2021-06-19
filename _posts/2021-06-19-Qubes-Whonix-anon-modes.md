@@ -32,7 +32,7 @@ Whonix's documentation is careful to define the clear differences between what s
 > - __Anonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, nor to associate any identifier with it.
 > - __Pseudonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, but it can be associated with an identifier.
 
-The key here is not to solely think about things like originating IP, but also unique [identifiers used in tracking cookies and other technology](https://coveryourtracks.eff.org/learn) as well as user information. To put it plainly in an example, the act of logging into an account with a username and password turns what could have been an "anonymous" connection into a technically "pseuudonymous" one - it is a connection that does not reveal your actual originating IP, but _does_ reveal your user information.
+The key here is not to solely think about things like originating IP, but also unique [identifiers used in tracking cookies and other technology](https://coveryourtracks.eff.org/learn) as well as user information. To put it plainly in an example, the act of logging into an account with a username and password turns what could have been an "anonymous" connection into a technically "pseudonymous" one - it is a connection that does not reveal your actual originating IP, but _does_ reveal your user information.
 
 A poigniant quote from a developer of the now defunct Liberte Linux drives the point a bit further:
 
@@ -78,9 +78,9 @@ But we can do one better here - we can get a freshly installed QubesOS system of
 
 ### Generating the AppVMs with Salt
 
-Ever since way back with version R3.1, QubesOS users have been able to [utilize the Salt management engine](https://www.qubes-os.org/doc/salt/) to build/control Templates and AppVMs from the `dom0` level on their system.
+Ever since way back with version R3.1, QubesOS users have been able to [utilize the Salt management engine](https://www.qubes-os.org/doc/salt/) to build and control Templates and AppVMs from the `dom0` level on their system.
 
-This comes in handy for quickly deploying VMs based on an `.sls` file - or ["Salt State File"](https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html) - configured by a user. I have built a [repo on github with these state/config files for AppVMs](https://github.com/RooneyMcNibNug/qubes-salt-anon-modes) to be built repsective to each one of these Modes.
+This comes in handy for quickly deploying VMs based on an `.sls` file - or ["Salt State File"](https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html) - configured by a user. I have built a [repo on github with these state/config files for AppVMs](https://github.com/RooneyMcNibNug/qubes-salt-anon-modes) to be built respective to each one of these Modes.
 
 Here is an example of the `.sls` file for the `mode-1` AppVM:
 
@@ -113,9 +113,9 @@ base:
 Pretty simple, huh? It is basically just pointing to the `.sls` files and will take the underlying metadata to build each of these AppVMs. So let's get started with pushing this out with these following steps:
 
 - It is best not to copy things _to_ `dom0` with the QubesOS tools to do so, as you would normally do from AppVM to AppVM - this has been [noted as a security risk](https://www.qubes-os.org/doc/copy-from-dom0/). Knowing this, it might be best to clone the repo here and copy the underlying files in a bit more of a manual way here...
-- You will want to put your `.top` file somewhere such as `/srv/salt/qubesmodes.top` and your `.sls` fiels in the same directory, like so: `/srv/salt/mode-1-vm.sls`
+- You will want to put your `.top` file somewhere such as `/srv/salt/qubesmodes.top` and your `.sls` fields in the same directory, like so: `/srv/salt/mode-1-vm.sls`
 - Enable the `.top` file from `dom0` terminal with the following command: ```qubesctl top.enable qubesmodes```
-- Let's make sure we see the `.top` file we created for this in the output after this ommand, which is used to check enabled `.top` files: ```qubesctl top.enabled```
+- Let's make sure we see the `.top` file we created for this in the output after this command, which is used to check enabled `.top` files: ```qubesctl top.enabled```
 - If we see it there, we are ready to apply the build of the AppVMs now with the following command: ```qubesctl --show-output --skip-dom0 --all state.highstate```
 - Notice that we are getting the verbose output with the added parameters in this command, and also telling the system to not worry about `dom0` states, since we are only focused on building AppVMs in the context here.
 - You should now see the VMs populated on your Qubes VM Manager!
