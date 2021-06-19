@@ -147,4 +147,4 @@ For a bit of a meta-joke conclusion, here is s screenshot of me creating this bl
 
 I'd love to hear about your QubesOS schemes. You can reach out to me at [@rooneymcnibnug](https://twitter.com/rooneymcnibnug) on The Bird Site or [email me](https://rooneymcnibnug.github.io/links/) if you want to chat.
 
-Safe surfing! :computer::surfer:
+Safe surfing! :computer: :surfer:
