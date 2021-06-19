@@ -17,7 +17,7 @@ I was speaking with one person in particular about how they manage privacy schem
 
 ### Understanding Anonimity Mode levels
 
-To me, a fundamental consideration with these different anonymity modes is data retention. If you are posting something to a public forum with a username connected to your actual identity in one way or another, its good to get into the mindset that you "left a piece of you" somewhere. The internet in constantly mined for user content and  metadata: your contact information, your "likes", your political opinions and ideologies, etc. It is every marketing agency's dream to be able to tie everyone's account details to one another to paint a mosiac of a user's desires - data brokers have big dreams of operating as if they were intelligence agencies. There are already Open Source Intelligence tools that do just this.
+To me, a fundamental understanding with these different anonymity modes is data retention. If you are posting something to a public forum with a username connected to your actual identity in one way or another, its good to get into the mindset that you "left a piece of you" somewhere. The internet in constantly mined for user content and  metadata: your contact information, your "likes", your political opinions and ideologies, etc. It is every marketing agency's dream to be able to tie everyone's account details to one another to paint a mosiac of a user's desires - data brokers have big dreams of operating as if they were intelligence agencies. There are already Open Source Intelligence tools that do just this.
 
 Thus it is necessary to use threat modeling and carefully consider use cases based on activity against the proper tools and connections.
 
@@ -32,9 +32,9 @@ Whonix's documentation is careful to define the clear differences between what s
 > - __Anonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, nor to associate any identifier with it.
 > - __Pseudonymous connection__: A connection to a destination server, where it has no ability to discover the origin (IP address / location) of the connection, but it can be associated with an identifier.
 
-The key here is not to solely think about things like originating IP, but also unique [identifiers used in tracking cookies and other technology](https://coveryourtracks.eff.org/learn) as well as user information. To put it plainly in an example, the act of logging into an account with a username and password turns what could have been an "anonymous" connection into a technically "pseudonymous" one - it is a connection that does not reveal your actual originating IP, but _does_ reveal your user information.
+The key here is not to solely think about things like originating IP, but also unique [identifiers used in tracking cookies and other technology](https://coveryourtracks.eff.org/learn) as well as user information. To put it plainly in an example, the act of logging into an account with a username and password turns what could have been an "anonymous" connection into a technically "pseudonymous" one - it is a connection that does not reveal your actual originating IP, but _does_ reveal your specific user information.
 
-A poigniant quote from a developer of the now defunct Liberte Linux drives the point a bit further:
+A poigniant and somewhat contraversial quote from a developer of the now defunct Liberte Linux drives the point a bit further:
 
 > "I have not seen a compelling argument for anonymity, as opposed to pseudonymity. Enlarging anonymity sets is something that Tor developers do in order to publish incremental papers and justify funding. Most users only need to be pseudonymous, where their location is hidden. Having a unique browser does not magically uncover user's location, if that user does not use that browser for non-pseudonymous activities. Having good browser header results on anonymity checkers equally does not mean much, because there are many ways to uncover more client details (e.g., via Javascript oddities)."
 
@@ -72,7 +72,7 @@ I think we get it now. This is where the different Whonix Mix Anonimity Modes co
     - The user's real IP address / location is revealed.
     - The user's location is revealed.
 
-Think of these as use cases based on threat models, but also - in the context - as compartmentalized VMs. These scenarios can work quite well paired with respective AppVMs on a QubesOS system. For instance - where a Mode 1-based VM is a generated AppVM titled `mode-1` using the `whonix-ws` template-VM and `sys-whonix` network-VM.
+Think of these as use cases based on threat models, but also - in the context - as compartmentalized VMs. These scenarios can work quite well paired with the designated AppVMs on a QubesOS system. For instance - where a Mode 1-based VM is a generated AppVM titled `mode-1` using the `whonix-ws` template-VM and `sys-whonix` network-VM.
 
 But we can do one better here - we can get a freshly installed QubesOS system off the ground with this setup. Let's create an AppVM for each of these Modes using infrastructure management via [Salt](https://docs.saltproject.io/en/latest/).
 
@@ -80,7 +80,7 @@ But we can do one better here - we can get a freshly installed QubesOS system of
 
 Ever since way back with version R3.1, QubesOS users have been able to [utilize the Salt management engine](https://www.qubes-os.org/doc/salt/) to build and control Templates and AppVMs from the `dom0` level on their system.
 
-This comes in handy for quickly deploying VMs based on an `.sls` file - or ["Salt State File"](https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html) - configured by a user. I have built a [repo on github with these state/config files for AppVMs](https://github.com/RooneyMcNibNug/qubes-salt-anon-modes) to be built respective to each one of these Modes.
+This comes in handy for quickly deploying VMs based on an `.sls` file - or ["Salt State File"](https://docs.saltproject.io/en/latest/topics/tutorials/starting_states.html) - configured by a user. I have built a [repo on github with these state/config files for AppVMs](https://github.com/RooneyMcNibNug/qubes-salt-anon-modes) respective to each one of these Modes.
 
 Here is an example of the `.sls` file for the `mode-1` AppVM:
 
@@ -147,4 +147,7 @@ For a bit of a meta-joke conclusion, here is s screenshot of me creating this bl
 
 I'd love to hear about your QubesOS schemes. You can reach out to me at [@rooneymcnibnug](https://twitter.com/rooneymcnibnug) on The Bird Site or [email me](https://rooneymcnibnug.github.io/links/) if you want to chat.
 
-Safe surfing! :computer: :surfer:
+Safe surfing!
+<p align="center">
+  <img src="/img/pika-surf.gif">
+</p>
