@@ -9,7 +9,9 @@ Muckrock account](https://www.muckrock.com/accounts/profile/joliet_j/).
 
 I'm an active member of [Lucy Parsons Labs](https://lucyparsonslabs.com/), where I mostly do.. well, FOIA work.
 
-You can reach me via email at Jakea350 at protonmail dot com. Here is my pgp public key:
+The best way to quickly reach me is via [Signal](https://signal.org/download/) at the following number: 1️⃣ 2️⃣6️⃣2️⃣  8️⃣4️⃣3️⃣  5️⃣8️⃣6️⃣0️⃣
+
+You can also reach me via email at Jakea350 at protonmail dot com. Here is my pgp public key:
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
