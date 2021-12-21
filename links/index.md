@@ -72,3 +72,5 @@ B4tEr6LaqdOjzNU3oXiizfHsjktRrQ5BUweDSy0cSBZ+Nv9X3JnHaqEz2b/6
 =HJOd
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+<iframe src="https://snowflake.torproject.org/embed.html" width="320" height="240" frameborder="0" scrolling="no"></iframe>
