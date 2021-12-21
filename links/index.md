@@ -73,4 +73,8 @@ B4tEr6LaqdOjzNU3oXiizfHsjktRrQ5BUweDSy0cSBZ+Nv9X3JnHaqEz2b/6
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+I use [Tor](https://www.torproject.org/) because I believe that privacy in the digital age is crucial. Please consider supporting the privacy of Tor users by using the Tor Browser yourself and/or running something like Tor Snowflake: 
+
+<p align="center">
 <iframe src="https://snowflake.torproject.org/embed.html" width="320" height="240" frameborder="0" scrolling="no"></iframe>
+</p>
