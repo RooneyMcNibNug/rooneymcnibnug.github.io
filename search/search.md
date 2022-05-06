@@ -6,7 +6,7 @@ permalink: /search/
 
 Looking for something?
 
-Please feel free to run a search for it here using (DuckDuckGo)[https://duckduckgo.com/spread]:
+Please feel free to run a search for it here using [DuckDuckGo](https://duckduckgo.com/spread):
 
 <form method="get" id="search" action="https://duckduckgo.com/">
 <input type="hidden" name="sites" value="rooneymcnibnug.github.io"/>
