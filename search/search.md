@@ -11,5 +11,5 @@ Please feel free to run a search for it here using [DuckDuckGo](https://duckduck
 <form method="get" id="search" action="https://duckduckgo.com/">
 <input type="hidden" name="sites" value="rooneymcnibnug.github.io"/>
 <input type="hidden" name="kh" value="1"/>
-<input class="search" type="text" size="25" name="q" maxlength="300" placeholder="site:rooneymcnibnug.github.io privacy"/>
+<input class="search" type="text" size="35" name="q" maxlength="300" placeholder="site:rooneymcnibnug.github.io privacy"/>
 <input type="submit" value="Search" style="visibility: hidden;" /></form>
