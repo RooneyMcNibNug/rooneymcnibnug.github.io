@@ -75,9 +75,9 @@ You can imagine the inspirations drawn by Pynchon within these corridors, and al
 
 Hobey was really losing his cool now. He was probably tired of ignorant teenagers and their games. The next time someone “[ding-dong-ditched](https://en.wikipedia.org/wiki/Knock,_Knock,_Ginger)” his house or set off fireworks near the beach entryway, he would be ready.
 
-It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. A friend of mine was nagging on Pete to go ring Hobey’s doorbell and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
+It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. A friend of mine was nagging on Pete to go knock on Hobey’s front door and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
 
-Pete came running from Hobey’s doorstep after the frantic knocking at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off for the first time. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of his bike.
+Pete came running from Hobey’s doorstep after the frantic rapping at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off for the first time. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of his bike.
 
 It is very hard for me to recollect any exact exchange of words, or most of what was said by Hobey, in all honesty. He continued to take photos of us as best as he could, and I do remember him mentioning something about how he knew we were “the ones” who did something or other (maybe true, maybe not).
 
@@ -130,10 +130,10 @@ Towards the beginning of Part 3 of Gravity’s Rainbow, Slothrop begins a new pr
 
 **“Rain drips, soaking into the floor, and Slothrop perceives that he is losing his mind. If there is something comforting—religious, if you want—about paranoia, there is still also anti-paranoia, where nothing is connected to anything, a condition not many of us can bear for long. Well right now Slothrop feels himself sliding onto the anti-paranoid part of his cycle, feels the whole city around him going back roofless, vulnerable, uncentered as he is..” -- Page 434**
 
-Maybe when we tear away from a place of complicity, secrecy and discipline, and when we are left somewhere completely different than that, things become too disjointed. The constant stench of paranoia clears and you are left with a tainted mind, but less tangible threats of conspiracy. 
+Maybe when we tear away from a place of complicity, secrecy and discipline, and when we are left somewhere completely different than that, things become too disjointed. The constant stench of paranoia clears and you are left with a mind tainted by the scent, but less tangible threats of conspiracy. 
 
-Maybe most in the situation use this as a justification for their reactions. A tightening of the reigns, full control of your domain and a warning to any trespassers.
+Maybe most in the situation use this as a justification for their reactions. A tightening of the reigns, a need for full control of your domain and a warning to any trespassers.
 
-Maybe where the glimmer of connected events and tripping into circular reasoning has been clouded over, you are forced to try and find your way around a new and unfamiliar terrain. And you can’t help but be too careful there, who knows the type of people you might run into. Or run into you. No, the dots aren’t connected. But.. is that all part of a plan? A plot?
+Maybe where the "religious" glimmer of connected events and an eventual tripping into circular reasoning has been clouded over, you are forced to work your way around a new and unfamiliar terrain. And you can’t help but be too careful there, who knows the type of people you might run into. Or might run into you. No, the dots aren’t connected. But.. is that all part of a plan? A plot?
 
 Who was chasing who here, anyways?
