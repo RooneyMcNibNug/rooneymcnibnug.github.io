@@ -4,6 +4,17 @@ title:  "The Watchers and Their 'Zones' - Pynchon dans piéton"
 categories: [Writing]
 tags: [Pynchon, existentialism, paranoia, suburbia]
 ---
+# The Watchers and Their 'Zones': Pynchon dans piéton
+
+<a href="url"><img src="/img/chasing_rockets.jpeg" align="center" ></a>
+
+_It's been a very long time since I've written something I actually wanted to publish that isn't a technical write-up._
+
+_But I've been nostalgic lately. Maybe its a (hopefully early) mid-life crisis? Regardless, I've been digging into some of my favorite author's work lately and I couldn't help but make a strange connection to some earlier times in my own life. Maybe in an abstract way, but something that was really nagging in my mind._
+
+_I've thrown this all here for now, so I hope at least someone can find a bit of joy and/or curiosity in reading it._
+
+----
 
 ### _"..the Zone envelopes him." –- Gravity’s Rainbow, Page 281_
 
@@ -33,7 +44,7 @@ I remember later talking to another friend in the neighborhood who mentioned bei
 
 “You think I’m training him like some kind of dog?!”
 
-There was an eventual fizzing out of emotions and the situation gradually dissipated into nothingness, but my friend recalls being shocked. How did he see it happen so fast? From where?
+There was an eventual fizzling out of emotions and the situation gradually dissipated into nothingness, but my friend recalls being shocked. How did he see it happen so fast? From where?
 
 The boat stickers incident was a tame encounter. We would all personally see more of Hobey to come. He would become a legend of our stomping grounds – the man stationed at his upstairs windows, binoculars drawn to his face whenever there were shrill voices heard outside.
 
@@ -43,13 +54,13 @@ The boat stickers incident was a tame encounter. We would all personally see mor
 
 Thomas Pynchon has a way of blending the starkness of paranoia with the hilarity of it all. I have not read – and probably will never read anything – that conveyed this in such a poignant fashion as Gravity’s Rainbow. In the novel, a series of characters find themselves preoccupied by all sorts of conspiracies towards the tail-end (and shortly after the end) World War II. One of the main elements of the story are competing theories of the German V2 rockets and why they end up landing where they do.
 
-Gravity’s Rainbow – like much of Pynchon's work– peppers both conspiracy theories and conspiracy practice (actually proven events such as the Phoebus Cartel) through-out, a winding wonderful mess of constantly checking your back for a tail, wondering if you’ve seen that face on the side of the road nearby before, using near-mnemonics to monitor the license plates of nearby cars, and wondering if something is rotten luck or… planned obsolescence. 
+[Gravity’s Rainbow](https://en.wikipedia.org/wiki/Gravity's_Rainbow) – like much of Pynchon's work – peppers both conspiracy theories and conspiracy practice (actually proven events such as the [Phoebus Cartel](https://en.wikipedia.org/wiki/Phoebus_cartel)) through-out, a winding wonderful mess of constantly checking your back for a tail, wondering if you’ve seen that face on the side of the road nearby before, using near-mnemonics to monitor the license plates of nearby cars, and wondering if something is rotten luck or… planned obsolescence. 
 
 Through the calamity of a never ending list of characters, the story ebbs and flows back to a particular character, Slothrop, (and others’) paranoia – a paranoia of the megalomaniac. It is not quite the narcissism that you would find in a Psych textbook on personality disorders, its the type wrought by a particular type of environment. An environment where you are chasing something – what the existentialists refer to as a “project” – so entirely cumbersome it could crush you and most of what you know. And that’s what it feels like when you walk away from it. A self importance taught by being asked to work against impending doom.
 
 You chase and you build until the job is done, and then you are left delirious.
 
-Towards the end of the Second Part of Gravity’s Rainbow and into the Third, Slothrop is a character who becomes increasingly paranoid during his time in Europe. His colleagues have left him and he is set adrift into a sea of uncertainty. Yes, my friends are gone and most of my work is done, but there are people out chasing me and ..I have people I need to chase himself, come to think of it. This all takes place in post-war Europe referred to in the book as “The Zone”. It is a place of confusion for Slothrop and many others who may have felt more of a sense of purpose earlier on in the war. “..here in the Zone categories have blurred badly.” [Page 
+Towards the end of the Second Part of Gravity’s Rainbow and into the Third, Slothrop is a character who becomes increasingly paranoid during his time in Europe. His colleagues have left him and he is set adrift into a sea of uncertainty. Yes, my friends are gone and most of my work is done, but there are people out chasing me and ..I have people I need to chase himself, come to think of it. This all takes place in post-war Europe referred to in the book as “The Zone”. It is a place of confusion for Slothrop and many others who may have felt more of a sense of purpose earlier on in the war. “..here in the Zone categories have blurred badly.”
 
 Without spoiling too much of the story, there is something particularly special about this work and particularly the person who created it. Pynchon served in The U.S. Navy in the mid-1950s. He was an Engineer with a knack for math and physics. After his service, he was employed by Boeing to do a much technical writing for their CIM-10 Bomarc missile system system – as well as the SAGE system, its underlying network that allowed automated control and communication between missiles, as well as missile detection and interception features. This system would be greatly touted during the Cold War.
 
@@ -62,11 +73,11 @@ You can imagine the inspirations drawn by Pynchon within these corridors, and al
 
 <a href="url"><img src="/img/blurry.jpg" align="center" height="456" width="678" ></a>
 
-Hobey was really losing his cool now. He was probably tired of ignorant teenagers and their games. The next time someone “ding-dong-ditched” his house or set off fireworks near the beach entryway, he would be ready.
+Hobey was really losing his cool now. He was probably tired of ignorant teenagers and their games. The next time someone “[ding-dong-ditched](https://en.wikipedia.org/wiki/Knock,_Knock,_Ginger)” his house or set off fireworks near the beach entryway, he would be ready.
 
 It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. A friend of mine was nagging on Pete to go ring Hobey’s doorbell and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
 
-Pete came running from Hobey’s doorstep after the frantic doorbell-button-pushing and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off for the first time. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of his bike.
+Pete came running from Hobey’s doorstep after the frantic knocking at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off for the first time. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of his bike.
 
 It is very hard for me to recollect any exact exchange of words, or most of what was said by Hobey, in all honesty. He continued to take photos of us as best as he could, and I do remember him mentioning something about how he knew we were “the ones” who did something or other (maybe true, maybe not).
 
@@ -92,11 +103,11 @@ Years rolled by. My friends and I moved on, moved out – school, full-time jobs
 
 The obituary read that Hobey enlisted in the Navy at the end of WWII. He was an Engineer with a knack for physics. Who knows, maybe Pynchon or him may have seen the other’s name on some mundane file tossed upon their desk a few times. But what came as the more remarkable revelation after Hobey’s death stemmed from his work just before joining the Navy. 
 
-In high school, Hobey worked as an Engineer for a company called Cook Electric in Chicago. Cook Electric was stationed at a warehouse where, suddenly in the early 1940s, the United States Government and Armed Forces decided to use as a pilot plant for the development of the production of plutonium. It was later decided that certain facilities – including the one Hobey worked at – would be used as research and development hubs for the project as well. This would be infamously known as Manhattan Project. 
+In high school, Hobey worked as an Engineer for a company called Cook Electric in Chicago. Cook Electric was stationed at a warehouse where, suddenly in the early 1940s, the United States Government and Armed Forces decided to use as a pilot plant for the development of the production of plutonium. It was later decided that certain facilities – including the one Hobey worked at – would be used as research and development hubs for the project as well. This would be infamously known as [Manhattan Project](https://en.wikipedia.org/wiki/Manhattan_Project). 
 
 Research and development. Nuclear war.
 
-A “project” that ends but never really does now, does it. If you aren’t careful enough, it can become an all-consuming “essence ensuing existence”.
+A “project” that ends but never really does now, does it. If you aren’t careful enough, it can become an all-consuming “[essence ensuing existence](https://plato.stanford.edu/entries/existentialism/#ExiPreEss)”.
 
 Hobey’s family had alleged in the obituary that he didn’t know the details of the secretive project that the government had them cooking up during his time with the company, but he was sworn to secrecy with his work. Only after the bombs were dropped on Hiroshima and Nagasaki were the workers fully informed. But you have to wonder..
 
@@ -126,5 +137,3 @@ Maybe most in the situation use this as a justification for their reactions. A t
 Maybe where the glimmer of connected events and tripping into circular reasoning has been clouded over, you are forced to try and find your way around a new and unfamiliar terrain. And you can’t help but be too careful there, who knows the type of people you might run into. Or run into you. No, the dots aren’t connected. But.. is that all part of a plan? A plot?
 
 Who was chasing who here, anyways?
-
-<a href="url"><img src="/img/chasing_rockets.jpeg" align="center" ></a>
