@@ -7,6 +7,7 @@ tags: [linux, privacy, pihole]
 
 GIST:
 
+```
 - https://chiefmartec.com/2022/05/marketing-technology-landscape-2022-search-9932-solutions-on-martechmap-com/
 - register with throwaway email to access https://martechmap.com/int_supergraphic
 - inspect element and point to the proper file
@@ -17,8 +18,7 @@ GIST:
 - might have to manually remove domains that might break things..
 - grep the enumerations file for common terms: $ egrep -r "track|ad|collect|stat|discover|metric|social|counter|lead|traffic|click|event|script|analytic|campaign|visit|engage|intel|monitor|audience|user|target|js|pulse|feed|tag|market|record|pixel|canvas|report" 22MarEnums.txt
 - dump domains currently stored in gravity.db: $ sudo sqlite3 /etc/pihole/gravity.db "SELECT domain FROM gravity WHERE rowid IN (SELECT rowid FROM gravity GROUP BY domain);" > /home/pi/GravDump.txt"
-- 
-
+```
 
 
 ```console
