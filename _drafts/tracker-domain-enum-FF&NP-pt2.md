@@ -20,8 +20,29 @@ GIST:
 - dump domains currently stored in gravity.db: $ sudo sqlite3 /etc/pihole/gravity.db "SELECT domain FROM gravity WHERE rowid IN (SELECT rowid FROM gravity GROUP BY domain);" > /home/pi/GravDump.txt"
 ```
 
+WRITE UP:
 
-```console
+In an [old post](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html) on this blog I wrote about the joys of blocking creepy advertising and tracking domains, and how this joy sparked a desire for me to build [my own blocklist](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt).
+
+This blog post will serve as the ever-belated second part, where we can go over an interesting source example for sub-domain enumeration for the `SNAFU` blocklist. So let's get right into it.
+
+## Going to Market
+
+I have used a lot of methods to build my SNAFU blocklist - from manually glimpsing through queries and finding ones that look like they might need to be blocked, from more automated methods. I kept thinking it might be nice to document one of the automated ones, when I stumbled upon a great example.
+
+One of the sources I use for find new ad/tracking domains to enusmerate is soemthign called [Martech](https://martech.org/what-is-martech/), who advertise themselves as the following:
+
+> MarTech’s mission is unlike any other. You’ll get the mainstream marketer’s perspective: innovative, practical, brand-safe, results-driven … and resource- and time-constrained. The quest is unearthing the universal challenges marketers face. The holy grail is revealing the countless solutions they devise to succeed in today’s customer-centric, digital-first, and multichannel marketing environment. 
+>
+> In short, MarTech is Marketing. 
+
+Martech has had some interesting visualizations on different players in the digital marketing space in the past, which they call the "Martech Marketing Landscape". They release one of these every year and I have been [collecting](https://github.com/RooneyMcNibNug/pihole-stuff/tree/master/martech_landscape_imgs) them in order to scope out new domains to enumerate in a search for new entries to add to my SNAFU blocklist.
+
+
+![image](https://user-images.githubusercontent.com/17930955/178816597-332b6e91-7590-48dc-bc35-b7bfe171bc19.png)
+That's a lot of crap! Perhaps someone should 
+
+```consoleof a 
 boop@pihole:~ $ wc -l GravDump.txt
 1296697 GravDump.txt
 ```
