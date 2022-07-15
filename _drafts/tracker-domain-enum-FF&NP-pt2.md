@@ -38,17 +38,15 @@ One of the sources I use for find new ad/tracking domains to enusmerate is soemt
 
 Martech has had some interesting visualizations on different players in the digital marketing space in the past, which they call the "Martech Marketing Landscape". They release one of these every year and I have been [collecting](https://github.com/RooneyMcNibNug/pihole-stuff/tree/master/martech_landscape_imgs) them in order to scope out new domains to enumerate in a search for new entries to add to my SNAFU blocklist.
 
+![image](https://user-images.githubusercontent.com/17930955/178816597-332b6e91-7590-48dc-bc35-b7bfe171bc19.png)
+That's quite a creepshow! Perhaps it would be worth the effort to go forth and cast the net out to reel in new invasive URLs?
+
 This has been relatively easy in the past, but when I went to check out this year's "Landscape" I was a bit suprised to find a couple of details that were bound to make it harder to grab domains from 
 
 1. You need to create an account to [access](https://martechmap.com/int_supergraphic) the graphic
 2. The graphic is dynamic and does not contain domains up front - you have to hover over icons for them to be displayed:
 
 <img width="795" alt="image" src="https://user-images.githubusercontent.com/17930955/179120301-66ad66de-db67-4cc7-98f1-7957780abb55.png">
-
-
-
-![image](https://user-images.githubusercontent.com/17930955/178816597-332b6e91-7590-48dc-bc35-b7bfe171bc19.png)
-That's a lot of crap! Perhaps it would be worth the effort to go forth and cast the net out to reel in new invasive URLs?
 
 ## Doing the legwork
 
@@ -109,11 +107,28 @@ Good luck Hax0r 💀!
 Rate limit set to 5 seconds, waiting to start next enumeration.
 ```
 
+With >9,000 domains in my list `22marfixed.txt`.. this part was the most time consuming. I left it running for a few days before it was able to finish full enumerations for all domains.
 
+When it was finally complete, I did also have to dig through and find domains that might break things for anyone using the SNAFU list before adding it to there. There were some other sections within the dynamic Landscape that were less applicable to user monitoring/tracking, ad-serving, etc. and more along the lines of point-of-sales systems, authenitcations, etc.
+
+Once I had scathed through `22MarEnums.txt` and cleaned it up, I needed to dump all of the current domains being blocked on my pi-hole. I wanted to dump _not just_ the domains from the SNAFU list, but instead _all_ lists I was currently using, which include other popualr lists. The reason for this is I designed SNAFU to try and be a list that would be a great suppliment alongside other lists that people have worked hard on harvesting domains to block - that way I am only grabbing things that have been missed from some of the other lists who have been around longer.
+
+In the past year or so, Pi-hole has switched to Sqlite3 for its [Gravity database](https://docs.pi-hole.net/database/gravity/), which includes all of the blocked domains. `gravity.db` was where I needed to look to see all of those. 
+
+I went ahead figured out the SQL syntax to grab all of the domains and dump them into ~another~ seperate text file.
+
+```console
+boop@pihole:~ $ sudo sqlite3 /etc/pihole/gravity.db "SELECT domain FROM gravity WHERE rowid IN (SELECT rowid FROM gravity GROUP BY domain);" > /home/pi/GravDump.txt"
+```
 
 ```console
 boop@pihole:~ $ wc -l GravDump.txt
 1296697 GravDump.txt
 ```
 
+Okay, so now we were at the de-duplicating stage.
+
 <img width="250" alt="image" src="https://user-images.githubusercontent.com/17930955/179126866-ec0f8eb9-1210-4bf1-9895-2fe794757965.png">
+
+## Building a wider net to cast out into the sea
+
