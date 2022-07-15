@@ -22,7 +22,7 @@ GIST:
 
 WRITE UP:
 
-In an [old post](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html) on this blog I wrote about the joys of blocking creepy advertising and tracking domains, and how this joy sparked a desire for me to build [my own blocklist](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt).
+In an [old post](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html) on this blog I wrote about the joys of blocking creepy advertising and tracking domains, and how this strange little hobby sparked a desire for me to build [my own blocklist](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt).
 
 This blog post will serve as the ever-belated second part, where we can go over an interesting source example for sub-domain enumeration for the `SNAFU` blocklist. So let's get right into it.
 
@@ -38,16 +38,44 @@ One of the sources I use for find new ad/tracking domains to enusmerate is soemt
 
 Martech has had some interesting visualizations on different players in the digital marketing space in the past, which they call the "Martech Marketing Landscape". They release one of these every year and I have been [collecting](https://github.com/RooneyMcNibNug/pihole-stuff/tree/master/martech_landscape_imgs) them in order to scope out new domains to enumerate in a search for new entries to add to my SNAFU blocklist.
 
+This has been relatively easy in the past, but when I went to check out this year's "Landscape" I was a bit suprised to find a couple of details that were bound to make it harder to grab domains from 
+
+1. You need to create an account to [access](https://martechmap.com/int_supergraphic) the graphic
+2. The graphic is dynamic and does not contain domains up front - you have to hover over icons for them to be displayed:
+
+<img width="795" alt="image" src="https://user-images.githubusercontent.com/17930955/179120301-66ad66de-db67-4cc7-98f1-7957780abb55.png">
+
+
 
 ![image](https://user-images.githubusercontent.com/17930955/178816597-332b6e91-7590-48dc-bc35-b7bfe171bc19.png)
-That's a lot of crap! Perhaps someone should 
+That's a lot of crap! Perhaps it would be worth the effort to go forth and cast the net out to reel in new invasive URLs?
 
-```consoleof a 
-boop@pihole:~ $ wc -l GravDump.txt
-1296697 GravDump.txt
+## Doing the legwork
+
+So with a quick look at the [Inspector tool in Firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/open_the_inspector/index.html), I was able to find the URL containing the source for the Landscape. From there, I could see the html source code:
+
+<img width="1328" alt="image" src="https://user-images.githubusercontent.com/17930955/179120893-132e85b7-47e6-42ff-90fa-409761d046ab.png">
+
+I figured it would be best to dump all of the _unique_ URLs into a text file, so I did so with the following one-liner:
+
+```console
+boop@pihole:~ $ grep "<a href=" 2022_martech_source.txt | grep -Eo "(www.)[a-zA-Z0-9./?=_%:-]*" | sort -u > 22mardomains.txt
+```
+After this, a little clean-up was required. There was a bit of manual work in finding domains that were included on the page outside the scope of the Landscape itself (it was littered with other LinkedIn URLs, for example. Once I had done that, I wanted to omit the `www.` from every line in the file, which I did with the following:
+
+```console
+boop@pihole:~ $ sed 's/^....//' 22mardomains.txt > 22marfixed.txt
 ```
 
-Findomain enum:
+Now it was time to enumerate. In my previously mentioned post I referenced a tool called [Sublist3r](https://github.com/aboul3la/Sublist3r), which I used in the past for this part. I have been using [Findomain](https://github.com/Findomain/Findomain) recently as a replacement for a few reasons, but mostly because it includes enumeration through Sublist3r as well as many other tools combined and works better running with an a file for input.
+
+The planw as to run Findomain against my `22marfixed.txt` file , so that it could go and recursively run against every domain within and spit it all out into a new file I would need later:
+
+```console
+boop@pihole:~ $ findomain -f 22marfixed.txt -r -u 22MarEnums.txt
+```
+
+Here is an exmaple Findomain running aginst one of the domains in `22marfixed.txt`:
 
 ```
 Running wildcards detection for 100shoppers.com...
@@ -80,3 +108,12 @@ Good luck Hax0r 💀!
 
 Rate limit set to 5 seconds, waiting to start next enumeration.
 ```
+
+
+
+```console
+boop@pihole:~ $ wc -l GravDump.txt
+1296697 GravDump.txt
+```
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/17930955/179126866-ec0f8eb9-1210-4bf1-9895-2fe794757965.png">
