@@ -126,7 +126,12 @@ boop@pihole:~ $ wc -l GravDump.txt
 1296697 GravDump.txt
 ```
 
-Okay, so now we were at the de-duplicating stage.
+Okay, so now we were at the de-duplicating stage. We want to try and find any URLs we enumerated within `22MarEnums3.txt` and "de-duplicate" them from our `GravDump.txt`. A kind of janky way I went about this was using the `diff` command in the following way:
+
+```console
+boop@pihole:~ $ diff -U $(wc -l < 22MarEnums3.txt) 22MarEnums.txt GravDump.txt| sed -n 's/^-//p' > ToAdd.txt
+```
+
 
 <img width="250" alt="image" src="https://user-images.githubusercontent.com/17930955/179126866-ec0f8eb9-1210-4bf1-9895-2fe794757965.png">
 
