@@ -24,7 +24,7 @@ WRITE UP:
 
 In an [old post](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html) on this blog I wrote about the joys of blocking creepy advertising and tracking domains, and how this strange little hobby sparked a desire for me to build [my own blocklist](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt).
 
-This blog post will serve as the ever-belated second part, where we can go over an interesting source example for sub-domain enumeration for the `SNAFU` blocklist. So let's get right into it.
+This blog post will serve as the ever-belated second part, where we can go over an interesting source example for subdomain enumeration for the `SNAFU` blocklist. So let's get right into it.
 
 ## Going to Market
 
@@ -126,14 +126,22 @@ boop@pihole:~ $ wc -l GravDump.txt
 1296697 GravDump.txt
 ```
 
+I compared this to the number of blocked domains showing up on the pi-hole admin GUI, and it checked out:
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/17930955/179126866-ec0f8eb9-1210-4bf1-9895-2fe794757965.png">
+
 Okay, so now we were at the de-duplicating stage. We want to try and find any URLs we enumerated within `22MarEnums3.txt` and "de-duplicate" them from our `GravDump.txt`. A kind of janky way I went about this was using the `diff` command in the following way:
 
 ```console
 boop@pihole:~ $ diff -U $(wc -l < 22MarEnums3.txt) 22MarEnums.txt GravDump.txt| sed -n 's/^-//p' > ToAdd.txt
 ```
 
-
-<img width="250" alt="image" src="https://user-images.githubusercontent.com/17930955/179126866-ec0f8eb9-1210-4bf1-9895-2fe794757965.png">
-
 ## Building a wider net to cast out into the sea
 
+Remember when I said the bulk `findomain` job was the part of all this that was most time-consuming? I lied.
+
+The `ToAdd.txt` file is massive, clocking at >45k domains (each a line-item) within. It would be quicker to automatically process through this file, maybe using [pieces of another script](https://github.com/RooneyMcNibNug/pihole-stuff/blob/master/python_scripts/pihole_domain_finder.py#L4) for picking out relevant malicious domains to add to the pi-hole database and cutting through benign ones, but this would miss out on more "full" enumerations of entire domains that are dedicated to tracking/ads. I want to block as much from those shady sites as possible with my list.
+
+Ultimately, this is requiring me to go through each one of these root domains and check out the sites a bit, to see what services they offer. If it is not inherently a site dedicated to providing services for advertising/tracking in any way, I can narrow it down to just keeping subdomains with addresses like `analytics.<domain_name>.com` or `pixel.<domain_name>.io` and so on. But when I find out that `yourclicksareourbusiness.xyz` is aptly named, I keep the entire enumeration to block.
+
+This results in me going alphabetically through the file and having to do some [rather large PRs on Github](). I'm taking this piece-meal, but hoping to have a much more powerful and all-encompassing blocklist when I am finished, for all to use and share freely.
