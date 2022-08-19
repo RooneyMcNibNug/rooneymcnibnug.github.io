@@ -5,6 +5,8 @@ categories: [Privacy]
 tags: [linux, privacy, pihole]
 ---
 
+# Pi-hole and Tracker Domain Enumeration (For Fun and _Not_ Profit) - Part II
+
 In an [old post](https://rooneymcnibnug.github.io/privacy/2019/05/15/rooney-pihole.html) on this blog I wrote about the joys of blocking creepy advertising and tracking domains, and how this strange little hobby sparked a desire for me to build [my own blocklist](https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt).
 
 This blog post will serve as the ever-belated second part, where we can go over an interesting source example for subdomain enumeration for the `SNAFU` blocklist. So let's get right into it.
