@@ -26,3 +26,8 @@ _July 24th, 2021_ - _Canon EOS Rebel T7_ - _GNU Image Manipulation Program_
 
 ![img](/photos/IMG_2832_edited.cleaned.JPG)
 _May 8th, 2021_ - _Canon EOS Rebel T7_ - _GNU Image Manipulation Program_
+<br/>
+<br/>
+
+![img](/photos/apple_tree_mushrooms.JPG)
+_August 20th, 2022_ - _Canon EOS Rebel T7_ - _No editing (raw)_
