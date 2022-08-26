@@ -10,7 +10,7 @@ tags: [Pynchon, existentialism, paranoia, suburbia]
 
 _It's been a very long time since I've written something I actually wanted to publish that isn't a technical write-up._
 
-_But I've been nostalgic lately. Maybe its a (hopefully early) mid-life crisis? Regardless, I've been digging into some of my favorite author's work lately and I couldn't help but make a strange connection to some earlier times in my own life. Maybe in an abstract way, but something that was really nagging in my mind._
+_But I've been nostalgic lately. Maybe its a crisis? Regardless, I've been digging into some of my favorite author's work lately and I couldn't help but make a strange connection to some earlier times in my own life. Maybe in an abstract way, but something that was really nagging in my mind._
 
 _I've thrown this all here for now, so I hope at least someone can find a bit of joy and/or curiosity in reading it._
 
@@ -24,7 +24,7 @@ I had the luxury of growing up in a suburban subdivision where you could create 
 
 Midwestern Americas, somewhere in between farmlands and plazas sprawling out into random splotches of woodlands littered with bodies of water too small to call ponds.
 
-The subdivision was a blessing and a curse to our adolescence: streets almost always empty shortly after dark, but half of the neighborhood populated by the type of older folks who would call the cops if you didn’t use your turn signal while driving by. It really did leave a strange feel of panopticism – we would slink around with our games but we knew we could always count on someone watching from any window of the bunched-up houses. This was always seen as a chore to my friends and myself, who at the age wanted nothing more than to fuck off and have a good time when the sun went down. Frequent activities often involved drinking in public, “wars” with bottle rockets, whipping pieces or pavement at street signs as loudly as we could, and doing donuts in empty lots/parks – anything of such cretinous nature.
+The subdivision was a blessing and a curse to our adolescence: streets almost always empty shortly after dark, but half of the neighborhood populated by the type of older folks who would call the cops if you didn’t use your turn signal while driving by. It really did leave a strange feel of panopticism – we would slink around with our games but we knew we could always count on someone watching from any window of the bunched-up houses. This was always seen as a chore to my friends and myself, who at the age wanted nothing more than to fuck off and have a good time when the sun went down. Frequent activities often involved drinking in public, “wars” with bottle rockets, whipping pieces of pavement at street signs as loudly as we could, and doing donuts in empty lots/parks – anything of such cretinous nature.
 
 There was one gentlemen in particular who would grow to become the largest force against our existence as caution-to-the-wind nightwalkers – let’s call him Hobey. We were first accosted by Hobey (if I am remembering correctly) well before we had become the bastard teenagers of the neighborhood. There were some “private beaches” around a small man-made lake; tax-payers within the subdivision were able to enter with the key their family was given. A friend of mine had a nice little two-person (although sometimes even three of us would cram in it together) sailboat that we liked to take out on windy days. 
 
@@ -52,7 +52,7 @@ The boat stickers incident was a tame encounter. We would all personally see mor
 ### _"..is he drifting?"-- Page 556_
 <a href="url"><img src="/img/sailing_away.gif" align="center" height="456" width="678" ></a>
 
-Thomas Pynchon has a way of blending the starkness of paranoia with the hilarity of it all. I have never read anything that conveyed this in a more poignant fashion than [Gravity’s Rainbow](https://en.wikipedia.org/wiki/Gravity's_Rainbow). In the novel, a series of characters find themselves preoccupied by all sorts of conspiracies towards the tail-end (and shortly after the end) World War II. One of the main elements of the story are competing theories of the German V2 rockets and why they end up landing where they do.
+Thomas Pynchon has a way of blending the starkness of paranoia with the hilarity of it all. I have never read anything that conveyed this in a more poignant fashion than [Gravity’s Rainbow](https://en.wikipedia.org/wiki/Gravity's_Rainbow). In the novel, a series of characters find themselves preoccupied by all sorts of conspiracies towards the tail-end (and shortly after the end) of World War II. One of the main elements of the story involves competing theories of the German V2 rockets and why they end up landing where they do.
 
 Gravity's Rainbow – like much of Pynchon's work – peppers both conspiracy theories and conspiracy practice (actually proven events such as the [Phoebus Cartel](https://en.wikipedia.org/wiki/Phoebus_cartel)) through-out, a winding wonderful mess of constantly checking your back for a tail, wondering if you’ve seen that face on the side of the road nearby before, using near-mnemonics to monitor the license plates of nearby cars, and wondering if something is rotten luck or… planned obsolescence. 
 
@@ -60,9 +60,9 @@ Through the calamity of a never ending list of characters, the story ebbs and fl
 
 You chase and you build until the job is done, and then you are left delirious.
 
-Towards the end of the Second Part of Gravity’s Rainbow and into the Third, Slothrop is a character who becomes increasingly paranoid during his time in Europe. His colleagues have left him and he is set adrift into a sea of uncertainty. Yes, my friends are gone and most of my work is done, but there are people out chasing me and ..I have people I need to chase himself, come to think of it. This all takes place in post-war Europe referred to in the book as “The Zone”. It is a place of confusion for Slothrop and many others who may have felt more of a sense of purpose earlier on in the war. “..here in the Zone categories have blurred badly.”
+Towards the end of the Second Part of Gravity’s Rainbow and into the Third, Slothrop is a character who becomes increasingly paranoid during his time in Europe. His colleagues have left him and he is set adrift into a sea of uncertainty. Yes, my friends are gone and most of my work is done, but there are people out chasing me and ..I have people I need to chase myself, come to think of it. This all takes place in some land within post-war Europe referred to in the book as “The Zone”. It is a place of confusion for Slothrop and many others who may have felt more of a sense of purpose earlier on in the war. “..here in the Zone categories have blurred badly.”
 
-Without spoiling too much of the story, there is something particularly special about this work and particularly the person who created it. Pynchon served in The U.S. Navy in the mid-1950s. He was an Engineer with a knack for math and physics. After his service, he was employed by Boeing to do a much technical writing for their CIM-10 Bomarc missile system system – as well as the SAGE system, its underlying network that allowed automated control and communication between missiles, as well as missile detection and interception features. This system would be greatly touted during the Cold War.
+Without spoiling too much of the story, there is something particularly special about this work and particularly the person who created it. Pynchon served in The U.S. Navy in the mid-1950s. He was an Engineer with a knack for math and physics. After his service, he was employed by Boeing to do much technical writing for their CIM-10 Bomarc missile system system – as well as the SAGE system, its underlying network that allowed automated control and communication between missiles, as well as missile detection and interception features. This system would be greatly touted during the Cold War.
 
 It’s argued that some of the protocols in the SAGE system were used as inspiration for how ARPANET functioned, which led to DARPANET and eventually the internet as we know it today, pushing packets back and forth globally.
 
@@ -75,9 +75,9 @@ You can imagine the inspirations drawn by Pynchon within these corridors, and al
 
 Hobey was really losing his cool now. He was probably tired of ignorant teenagers and their games. The next time someone “[ding-dong-ditched](https://en.wikipedia.org/wiki/Knock,_Knock,_Ginger)” his house or set off fireworks near the beach entryway, he would be ready.
 
-It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. A friend of mine was nagging on Pete to go knock on Hobey’s front door and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
+It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. Another friend of mine was nagging on Pete to go knock on Hobey’s front door and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
 
-Pete came running from Hobey’s doorstep after the frantic rapping at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off for the first time. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of his bike.
+Pete came running from Hobey’s doorstep after the frantic rapping at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went offthe first time. And then the second and third. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of the bike he rode in on.
 
 It is very hard for me to recollect any exact exchange of words, or most of what was said by Hobey, in all honesty. He continued to take photos of us as best as he could, and I do remember him mentioning something about how he knew we were “the ones” who did something or other (maybe true, maybe not).
 
@@ -97,7 +97,7 @@ Even most adults at the time had to admit they found his constant watching from 
 
 <a href="url"><img src="/img/lost_footing.jpg" align="center" height="456" width="678" ></a>
 
-There were other run ins with Hobey – before and after Pete lost his cap. None of them were as direct, but they all left a little mark in our minds. Usually it was him coming out – whether we were just standing around benignly or if we were up to something more stupid – and demanding to know what we were doing. Those moments usually ended in a bit of a flicker of laughter and sprinting away. 
+There were other run ins with Hobey – before and after Pete lost his cap. None of them were as direct, but they all left a little mark in our minds. Usually it was him coming out – whether we were just standing around benignly or if we had been up to something more stupid – and demanding to know what we were doing. Those moments usually ended in a bit of a flicker of laughter and sprinting away. 
 
 Years rolled by. My friends and I moved on, moved out – school, full-time jobs, etc. We all kind of randomly returned once and while back to the subdivision. We noticed that the Man In The Window had gone missing from his post. We assumed the worst and we were right.
 
@@ -124,7 +124,7 @@ There are so many times I find myself reflecting on our strange encounters with 
 
 Can you live your life the same way after being part of a massive secret program? What kind of paranoia does this inject into a mind? What kind of paranoia do you leave with? What changes? It is hard for me to be judgmental for those who somewhat unknowingly toil over the research and creation of the components of a weapon of massive destruction. What makes you rest assured after something like that? Maybe you either learn to laugh at the absurdity of certain situations or else you approach them in such dour seriousness that you find an eventual comfort - an attempt at the complicity of yore.
 
-I look back and I don’t necessarily regret living my teenage years the way I did. But I do think about how many of these situations involving Hobey could have been handled differently. This is not to say he was absolved from being the absolute worse type of “neighborhood watch” goon, however I would have felt and perhaps reacted differently had I known then what I know now.
+I look back and I don’t necessarily regret living my teenage years the way I did. But I do think about how many of these situations involving Hobey could have been handled differently. This is not to say he was absolved from being the absolute worse type of “neighborhood watch” personality, however I would have felt and perhaps reacted differently had I known then what I know now.
 
 Towards the beginning of Part 3 of Gravity’s Rainbow, Slothrop begins a new project in “The Zone”. He feels as though it is different than the others, more of a wild goose chase than ever. The seeds of doubt are growing into obnoxious weeds. 
 
