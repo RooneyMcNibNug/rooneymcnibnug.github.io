@@ -21,7 +21,7 @@ One of the sources I use for find new ad/tracking domains to enumerate is someth
 >
 > "In short, MarTech is Marketing."
 
-Martech has had some interesting visualizations on different players in the digital marketing space in the past, which they call the "Martech Marketing Landscape". They release one of these every year and I have been [collecting](https://github.com/RooneyMcNibNug/pihole-stuff/tree/master/martech_landscape_imgs) them in order to scope out new domains to enumerate in a search for new entries to add to my `SNAFU` blocklist.
+Martech has had some interesting visualizations on different "players" in the digital marketing space in the past, which they call the "Martech Marketing Landscape". They release one of these every year and I have been [collecting](https://github.com/RooneyMcNibNug/pihole-stuff/tree/master/martech_landscape_imgs) them in order to scope out new domains to enumerate in a search for new entries to add to my `SNAFU` blocklist.
 
 ![image](https://user-images.githubusercontent.com/17930955/178816597-332b6e91-7590-48dc-bc35-b7bfe171bc19.png)
 That's quite a creepshow! Perhaps it would be worth the effort to go forth and cast the net out to reel in new invasive URLs?
@@ -51,7 +51,7 @@ After this, a little clean-up was required. There was a bit of manual work in fi
 boop@pihole:~ $ sed 's/^....//' 22mardomains.txt > 22marfixed.txt
 ```
 
-Now it was time to enumerate. In my previously mentioned post I referenced a tool called [Sublist3r](https://github.com/aboul3la/Sublist3r), which I used in the past for this part. I have been using [Findomain](https://github.com/Findomain/Findomain) recently as a replacement for a few reasons, but mostly because it includes enumeration through Sublist3r as well as many other tools combined and works better running with an a file for input.
+Now it was time to enumerate. In my previously mentioned post I referenced a tool called [Sublist3r](https://github.com/aboul3la/Sublist3r), which I used in the past for this part. I have been using [Findomain](https://github.com/Findomain/Findomain) recently as a replacement for a few reasons, but mostly because it includes enumeration through Sublist3r as well as many other tools combined and works better running with a file for input.
 
 The plan was to run Findomain against my `22marfixed.txt` file , so that it could go and recursively run against every domain within and spit it all out into a new file I would need later:
 
@@ -93,11 +93,11 @@ Good luck Hax0r 💀!
 Rate limit set to 5 seconds, waiting to start next enumeration.
 ```
 
-With >9,000 domains in my list `22marfixed.txt`, this part was the most time consuming. I left it running for a few days before it was able to finish full enumerations for all domains.
+With >9,000 domains in my list `22marfixed.txt`, this part was the most time consuming. I left it running for a few days before it was able to finish full enumerations for all the domains provided.
 
-When it was finally complete, I did also have to dig through and find domains that might break things for anyone using the `SNAFU` list before adding it to there. There were some other sections within the dynamic Landscape that were less applicable to user monitoring/tracking, ad-serving, etc. and more along the lines of point-of-sales systems, authenitcations, etc.
+When it was finally complete, I did also have to dig through and find domains that might break things for anyone using the `SNAFU` list before adding it to there. There were some other sections on the Martech page within the dynamic Landscape that were less applicable to user monitoring/tracking, ad-serving, etc. and more along the lines of point-of-sales systems, authenitcations, etc.
 
-Once I had scathed through `22MarEnums.txt` and cleaned it up, I needed to dump all of the current domains being blocked on my pi-hole. I wanted to dump _not just_ the domains from the blockist, but instead _all_ lists I was currently using, which include other popualr lists. The reason for this is I designed `SNAFU` to try and be a list that would be a great suppliment alongside other lists that people have worked hard on harvesting domains to block - that way I am only grabbing things that have been missed from some of the other lists who have been around longer.
+Once I had scathed through `22MarEnums.txt` and cleaned it up, I needed to dump all of the current domains being blocked on my pi-hole. I wanted to dump _not just_ the domains from the blockist, but instead _all_ lists I was currently using, which include other popular lists. The reason for this is I designed `SNAFU` to try and be a list that would be a great suppliment alongside other lists that people have worked hard on harvesting domains to block - that way I am only grabbing things that have been missed from some of the other lists who have been around longer.
 
 In the past year or so, Pi-hole has switched to Sqlite3 for its [Gravity database](https://docs.pi-hole.net/database/gravity/), which includes all of the blocked domains. `gravity.db` was where I needed to look to see all of those. 
 
@@ -128,7 +128,7 @@ Remember when I said the bulk `findomain` job was the part of all this that was 
 
 The `ToAdd.txt` file was _massive_, clocking at >45k domains (each a line-item) within. It would be quicker to automatically process through this file, maybe using [pieces of another script](https://github.com/RooneyMcNibNug/pihole-stuff/blob/master/python_scripts/pihole_domain_finder.py#L4) for picking out relevant malicious domains to add to the pi-hole database and cutting through benign ones, but this would miss out on more "full" enumerations of entire domains that are dedicated to tracking/ads. I want to block as much from those shady sites as possible with my list.
 
-Ultimately, this is requiring me to go through each one of these root domains and check out the sites a bit, to see what services they offer. If it is not inherently a site dedicated to providing services for advertising/tracking in any way, I can narrow it down to just keeping subdomains with addresses like `analytics.<domain_name>.com` or `pixel.<domain_name>.io` and so on. But when I find out that `yourclicksareourbusiness.xyz` is aptly named, I keep the entire enumeration to block.
+Ultimately, this is requiring me to go through each one of these root domains and check out the sites a bit, to see what services they offer. If it is not inherently a site dedicated to providing services for advertising/tracking in any way, I can narrow it down to just keeping subdomains with addresses like `analytics.<domain_name>.com` or `pixel.<domain_name>.io` and so on. But when I find out that `yourclicksareourbusiness.xyz` is aptly named, I keep the entire domain enumeration (all subdomains) to block.
 
 This results in me going alphabetically through the file and having to do some [rather large PRs](https://github.com/RooneyMcNibNug/pihole-stuff/commit/dc3338782332c5f668790f07f5216b8f65c2cdde) within my dedicated Github repo. I'm taking this piece-meal, but hoping to have a much more powerful and all-encompassing blocklist when I am finished, for all to use and share freely.
 
