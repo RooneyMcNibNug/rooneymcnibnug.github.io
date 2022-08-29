@@ -135,3 +135,5 @@ This results in me going alphabetically through the file and having to do some [
 I'm grateful for anyone who dedicated a bit of time to make using the internet a safer and less painful experience, so this has become a bit of a labour of love for me. I'm sure there are ways I can better build stuff like this, and I am always open to conversation on the matter. I will say that if you want to support the `SNAFU` blocklist, the best thing that you can do is use it and [submit an issue](https://github.com/RooneyMcNibNug/pihole-stuff/issues) when you run into something like a false positive or a site you find important not working properly due to a subdomain I have included in the blocklist. I try to respond to these and fix them within 48hrs.
 
 Until next time, be well.
+
+![header_img](/img/piesrt.png)
