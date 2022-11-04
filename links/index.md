@@ -74,6 +74,8 @@ KjxmxBddlpucwSW3
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+I have been trying to use <a rel="me" href="https://mastodon.social/@rooneymcnibnug">Mastodon</a> a bit more often - feel free to follow me and/or chat with me "in the open" on there.
+
 I use [Tor](https://www.torproject.org/) because I believe that privacy in the digital age is crucial. Please consider supporting the privacy of Tor users by using the Tor Browser yourself and/or running something like Tor Snowflake: 
 
 <p align="center">
