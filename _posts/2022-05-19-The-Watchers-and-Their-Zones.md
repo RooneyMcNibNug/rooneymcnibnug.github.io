@@ -91,7 +91,7 @@ Sure, we horsed around by this guy’s house and all, maybe disrupted his nights
 
 There were adults who kind of wrote him off here and there – “Oh he’s a strange one, I’ll give you that, but he just wants to do his own thing.” Sure, the first part rung true, but after those events it was clear he wanted to do more than his own thing. I remember eventually hearing a lot from siblings of friends about being confronted out of nowhere by him in similar fashion. Those were kids that I know for a fact were less deserved of any confrontation.
 
-Even most adults at the time had to admit they found his constant watching from the window a bit perturbing. You’d see him there, and then we you passed a glimpse his way he would hurry to close the curtains.
+Even most adults at the time had to admit they found his constant watching from the window a bit perturbing. You’d see him there, then as soon as you passed a glimpse his way he would hurry to close the curtains.
 
 ### _"..corrupted, given up on, creeps over the face of the Zone.." – Page 627_
 
