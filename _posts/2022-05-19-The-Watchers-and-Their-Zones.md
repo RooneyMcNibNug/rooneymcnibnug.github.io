@@ -132,7 +132,7 @@ Towards the beginning of Part 3 of Gravity’s Rainbow, Slothrop begins a new pr
 
 Maybe when we tear away from a place of complicity, secrecy and discipline, and when we are left somewhere completely different than that, things become too disjointed. The constant stench of paranoia clears and you are left with a mind tainted by the scent, but less tangible threats of conspiracy.
 
-You might find yourself as [a](https://archive.vn/q2ryy#selection-987.0-987.9) [preterite](https://web.archive.org/web/20221211152445/https://everything2.com/title/Preterite) in pedestrian occurances, a scary thought.
+You might, in the full realization of the ends to your past means, see yourself as having been [a](https://archive.vn/q2ryy#selection-987.0-987.9) [preterite](https://web.archive.org/web/20221211152445/https://everything2.com/title/Preterite) in pedestrian, a scary thought.
 
 Maybe most in the situation use this as a justification for their reactions. A tightening of the reigns, a need for full control of your domain and a warning to any trespassers.
 
