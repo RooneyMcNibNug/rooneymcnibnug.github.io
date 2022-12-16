@@ -130,7 +130,9 @@ Towards the beginning of Part 3 of Gravity’s Rainbow, Slothrop begins a new pr
 
 **“Rain drips, soaking into the floor, and Slothrop perceives that he is losing his mind. If there is something comforting—religious, if you want—about paranoia, there is still also anti-paranoia, where nothing is connected to anything, a condition not many of us can bear for long. Well right now Slothrop feels himself sliding onto the anti-paranoid part of his cycle, feels the whole city around him going back roofless, vulnerable, uncentered as he is..” -- Page 434**
 
-Maybe when we tear away from a place of complicity, secrecy and discipline, and when we are left somewhere completely different than that, things become too disjointed. The constant stench of paranoia clears and you are left with a mind tainted by the scent, but less tangible threats of conspiracy. 
+Maybe when we tear away from a place of complicity, secrecy and discipline, and when we are left somewhere completely different than that, things become too disjointed. The constant stench of paranoia clears and you are left with a mind tainted by the scent, but less tangible threats of conspiracy.
+
+You might find yourself as [a](https://archive.vn/q2ryy#selection-987.0-987.9) [preterite](https://web.archive.org/web/20221211152445/https://everything2.com/title/Preterite) in pedestrian occurances, a scary thought.
 
 Maybe most in the situation use this as a justification for their reactions. A tightening of the reigns, a need for full control of your domain and a warning to any trespassers.
 
