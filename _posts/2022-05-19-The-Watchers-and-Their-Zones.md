@@ -34,7 +34,7 @@ One afternoon, as we inspected the boat and readied it for the water, we heard t
 “What?”
 “Your stickers. For your boat. You need stickers.”
 
-We couldn’t have even been at the beach for more than 10 minutes at this point. We noticed he was carrying a pen and pad of paper in his hands. As we tried to explain to him that we had our required stickers,  he began looking at our boat and jotting something down on the pad.
+We couldn’t have even been at the beach for more than 10 minutes at this point. We noticed he was carrying a pen and pad of paper in his hands. As we tried to explain to him that we had our required stickers, he began looking at our boat and jotting something down on the pad.
 
 We were able to take the boat out to the shoreline and depart, but we could see him watching in the distance, just standing there for enough time to make the whole sailing thing too uncomfortable to enjoy. Eventually he left, and we realized that he lived in a house directly across this beach entrance.
 
@@ -75,21 +75,21 @@ You can imagine the inspirations drawn by Pynchon within these corridors, and al
 
 Hobey was really losing his cool now. He was probably tired of ignorant teenagers and their games. The next time someone “[ding-dong-ditched](https://en.wikipedia.org/wiki/Knock,_Knock,_Ginger)” his house or set off fireworks near the beach entryway, he would be ready.
 
-It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there, let’s call him Pete. Another friend of mine was nagging on Pete to go knock on Hobey’s front door and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
+It was one of those early summer nights where school was coming to a close and we maybe felt like we had a little less to lose. A friend of a friend was there. Let’s call him Pete. Another friend of mine was nagging on Pete to go knock on Hobey’s front door and walk away. Pete definitely had a more shy demeanor than my friend and I, but he thought it might be fun and we figured the egging-on was maybe a little healthy for someone like him.
 
-Pete came running from Hobey’s doorstep after the frantic rapping at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went offthe first time. And then the second and third. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of the bike he rode in on.
+Pete came running from Hobey’s doorstep after the frantic rapping at the door and fumbled toward the bike he had ridden to meet us with. He wasn’t fast enough. Hobey came out and snatched the baseball cap off of his head. Our shield of darkness was shattered as soon as the camera flash went off the first time. And then the second and third. It had an effect on the lot of us, but none more than Pete. He was in full disorientation, enough for Hobey to grab hold of the bike he rode in on.
 
 It is very hard for me to recollect any exact exchange of words, or most of what was said by Hobey, in all honesty. He continued to take photos of us as best as he could, and I do remember him mentioning something about how he knew we were “the ones” who did something or other (maybe true, maybe not).
 
 We were confident enough to be swearing at him as we demanded him to return Pete’s hat and bike, but we all knew what the stakes were. All he had to do was call the police and there would be absolutely no guess as to who they would bring back to the station between us and Hobey.
 
-Pete was able to wrestle his bike back but he never saw that hat again. There were very tense moments were Hobey was almost trying to pin Pete down to the ground by pushing his own bike on top of him, as we all stumbled toward him, trying to grab Pete.
+Pete was able to wrestle his bike back but he never saw that hat again. There were very tense moments where Hobey was almost trying to pin Pete down to the ground by pushing his own bike on top of him, as we all stumbled toward him, trying to grab Pete away.
 
 There was an eventual break away by our group, but Hobey tailed us closely. He had a flip phone out now, maybe dialing the police. We were able to lose him for a bit by ducking into a friend’s garage, but we watched there as he patrolled the streets for what felt like an hour more in the general area.
 
 Sure, we horsed around by this guy’s house and all, maybe disrupted his nights a few times, but this was getting a bit weird.
 
-There were adults who kind of wrote him off here and there – “Oh he’s a strange one, I’ll give you that, but he just wants to do his own thing.” Sure, the first part rung true, but after those events it was clear he wanted to do more than his own thing. I remember eventually hearing a lot from siblings of friends about being confronted out of nowhere by him in similar fashion. Those were kids that I know for a fact were less deserved of any confrontation.
+There were adults who kind of wrote him off here and there – “Oh he’s a strange one, I’ll give you that, but he just wants to do his own thing.” Sure, the first part rung true, but after those events it was clear he wanted to do more than his own thing. I remember eventually hearing a lot from siblings of friends about being confronted out of nowhere by him in similar fashion. Those were kids that I know for a fact were less deserved of any confrontation than us.
 
 Even most adults at the time had to admit they found his constant watching from the window a bit perturbing. You’d see him there, then as soon as you passed a glimpse his way he would hurry to close the curtains.
 
@@ -97,13 +97,13 @@ Even most adults at the time had to admit they found his constant watching from 
 
 <a href="url"><img src="/img/lost_footing.jpg" align="center" height="456" width="678" ></a>
 
-There were other run ins with Hobey – before and after Pete lost his cap. None of them were as direct, but they all left a little mark in our minds. Usually it was him coming out – whether we were just standing around benignly or if we had been up to something more stupid – and demanding to know what we were doing. Those moments usually ended in a bit of a flicker of laughter and sprinting away. 
+There were other run ins with Hobey – before and after Pete lost his cap. None of them were as direct, but they all left a little mark in our minds. Usually it was him coming out – whether we were just standing around benignly or if we had been up to something more stupid – and demanding to know what we were doing. Those moments consistently ended in a bit of a flicker of laughter and sprinting away. 
 
 Years rolled by. My friends and I moved on, moved out – school, full-time jobs, etc. We all kind of randomly returned once and while back to the subdivision. We noticed that the Man In The Window had gone missing from his post. We assumed the worst and we were right.
 
 The obituary read that Hobey enlisted in the Navy at the end of WWII. He was an Engineer with a knack for physics. Who knows, maybe Pynchon or him may have seen the other’s name on some mundane file tossed upon their desk a few times. But what came as the more remarkable revelation after Hobey’s death stemmed from his work just before joining the Navy. 
 
-In high school, Hobey worked as an Engineer for a company called Cook Electric in Chicago. Cook Electric was stationed at a warehouse where, suddenly in the early 1940s, the United States Government and Armed Forces decided to use as a pilot plant for the development of the production of plutonium. It was later decided that certain facilities – including the one Hobey worked at – would be used as research and development hubs for the project as well. This would be infamously known as [Manhattan Project](https://en.wikipedia.org/wiki/Manhattan_Project). 
+In high school, Hobey worked as an Engineer for a company called Cook Electric in Chicago. Cook Electric was stationed at a warehouse where, suddenly in the early 1940s, the United States Government and Armed Forces decided they needed some inconspicuous hubs for the development of the production of plutonium. It was later decided that certain facilities – including the one Hobey worked at – would be used as research and development hubs for the project as well. This would be infamously known as [Manhattan Project](https://en.wikipedia.org/wiki/Manhattan_Project).
 
 Research and development. Nuclear war.
 
