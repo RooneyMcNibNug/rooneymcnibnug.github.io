@@ -25,7 +25,7 @@ A switch was set off in my brain at some point, while working on some audits of 
 
 ## Special Deliveries
 
-Enter (sorta) artisinally-crafted Powershell one-liners within FOIA requests. For example:
+Enter Powershell one-liners within FOIA requests. For example:
 
 > To Whom It May Concern:
 >
@@ -79,7 +79,7 @@ Take for example, one of the emails I found in a responsive request was `CityBud
 
 ## "I hope this email finds you well"
 
-So what else can we do with one-liners in FOIA requests? Well, I have also been looking into enumerating [Alias Emails](https://learn.microsoft.com/en-us/microsoft-365/admin/email/add-another-email-alias-for-a-user?view=o365-worldwide) in the same way, with a simiatr template as the above, but the following seperate one-liner in powershell included:
+So what else can we do with one-liners in FOIA requests? Well, I have also been looking into enumerating [Alias Emails](https://learn.microsoft.com/en-us/microsoft-365/admin/email/add-another-email-alias-for-a-user?view=o365-worldwide) in the same way, with a similar template as above, but the following seperate one-liner in Powershell included:
 
 ```powershell
 Get-Mailbox | Select-Object DisplayName,RecipientType,PrimarySmtpAddress, @{Name="Aliases";Expression={$_.EmailAddresses | Where-Object {$_ -clike "smtp:*"}}} | Export-Csv ./email_aliases.csv
