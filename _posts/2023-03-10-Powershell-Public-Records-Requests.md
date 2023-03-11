@@ -38,7 +38,7 @@ Enter (sorta) artisinally-crafted Powershell one-liners within FOIA requests. Fo
 > 
 > A simple way to retrieve this is by having a member of IT (such as a System Administrator) run the following command in Exchange Online PowerShell (if email is hosted in a Microsoft Exchange environment):
 > 
- Get-Mailbox -ResultSize Unlimited -RecipientTypeDetails SharedMailbox | Select Name,PrimarySmtpAddress,WhenCreated | Export-CSV -Path .\SharedMailboxes_$((Get-Date).ToString('MM-dd-yyyy_hh-mm-ss')).csv
+> `Get-Mailbox -ResultSize Unlimited -RecipientTypeDetails SharedMailbox | Select Name,PrimarySmtpAddress,WhenCreated | Export-CSV -Path .\SharedMailboxes_$((Get-Date).ToString('MM-dd-yyyy_hh-mm-ss')).csv`
 > 
 > The requested documents will be made available to the general public, and this request is not being made for commercial purposes.
 >
