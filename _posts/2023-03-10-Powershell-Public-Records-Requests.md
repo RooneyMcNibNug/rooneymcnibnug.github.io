@@ -38,7 +38,7 @@ Enter (sorta) artisinally-crafted Powershell one-liners within FOIA requests. Fo
 > 
 > A simple way to retrieve this is by having a member of IT (such as a System Administrator) run the following command in Exchange Online PowerShell (if email is hosted in a Microsoft Exchange environment):
 > 
-> Get-Mailbox -ResultSize Unlimited -RecipientTypeDetails SharedMailbox | Select Name,PrimarySmtpAddress,WhenCreated | Export-CSV -Path .\SharedMailboxes_$((Get-Date).ToString('MM-dd-yyyy_hh-mm-ss')).csv
+ Get-Mailbox -ResultSize Unlimited -RecipientTypeDetails SharedMailbox | Select Name,PrimarySmtpAddress,WhenCreated | Export-CSV -Path .\SharedMailboxes_$((Get-Date).ToString('MM-dd-yyyy_hh-mm-ss')).csv
 > 
 > The requested documents will be made available to the general public, and this request is not being made for commercial purposes.
 >
@@ -77,7 +77,7 @@ So why even do this? Well, you can ascertain some interesting things from what S
 
 Take for example, one of the emails I found in a responsive request was `CityBudgetData@seattle.gov`. Seems like a pretty good email to request data from with a FOIA if you are doing reporting on the government spending in that state!
 
-## "I hope this finds you well"
+## "I hope this email finds you well"
 
 So what else can we do with one-liners in FOIA requests? Well, I have also been looking into enumerating [Alias Emails](https://learn.microsoft.com/en-us/microsoft-365/admin/email/add-another-email-alias-for-a-user?view=o365-worldwide) in the same way, with a simiatr template as the above, but the following seperate one-liner in powershell included:
 
