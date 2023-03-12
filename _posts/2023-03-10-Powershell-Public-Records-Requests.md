@@ -60,6 +60,8 @@ In digestable format, for those who have never touched powershell, this one line
     * The creation date of the Shared Mailbox
 - Take all of this information and throw it into a CSV spreadsheet, where the spreadsheet will be titled with the date that this is one-liner is ran on
 
+Sure, you could just request for Shared Mailboxes without the code here, but this puts a simple working script in the hands of the FOIA officer to hand to the IT Department to run, creating a pretty big efficiency and a greater argument against any claim of a burden. 
+
 I did this for several agencies, and then waited..
 
 ## "You've Got Mail(boxes)!"
