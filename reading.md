@@ -21,6 +21,7 @@ Books I've read that I more generally recommend others to check out (only slight
 - [Computer Power and Human Reason](https://en.wikipedia.org/wiki/Computer_Power_and_Human_Reason) by Joseph Weizenbaum
 - [Debt: The First 5,000 Years](https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years) by Daivd Graeber
 - [The Possibility of Cooperation](https://www.goodreads.com/book/show/2638734-the-possibility-of-cooperation) by Michael Taylor
+- [The Order of Time](https://en.wikipedia.org/wiki/The_Order_of_Time_(book)) by Carlo Rovelli
 - [One-Dimensional Man: Studies in the Ideology of Advanced Industrial Society](https://en.wikipedia.org/wiki/One-Dimensional_Man) by Herbert Marcuse
 - [Notes of a Native Son](https://en.wikipedia.org/wiki/Notes_of_a_Native_Son) by James Baldwin
 - [A Confession](https://en.wikipedia.org/wiki/Confession_(Leo_Tolstoy)) by Leo Tolstoy
