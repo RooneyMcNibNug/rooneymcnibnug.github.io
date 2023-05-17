@@ -8,6 +8,7 @@ Books I've read that I more generally recommend others to check out (only slight
 
 ### Fiction:
 - [Gravity's Rainbow](https://en.wikipedia.org/wiki/Gravity%27s_Rainbow) by Thomas Pynchon
+- [Mason & Dixon](https://en.m.wikipedia.org/wiki/Mason_%26_Dixon) by Thomas Pynchon
 - [Moby Dick](https://en.wikipedia.org/wiki/Moby-Dick) by Herman Melville
 - [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) by Ursula K. Le Guin
 - [2666](https://en.wikipedia.org/wiki/2666) by Roberto Bolaño
