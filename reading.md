@@ -11,6 +11,7 @@ Books I've read that I more generally recommend others to check out (only slight
 - [Mason & Dixon](https://en.m.wikipedia.org/wiki/Mason_%26_Dixon) by Thomas Pynchon
 - [Moby Dick](https://en.wikipedia.org/wiki/Moby-Dick) by Herman Melville
 - [The Dispossessed](https://en.wikipedia.org/wiki/The_Dispossessed) by Ursula K. Le Guin
+- [The Decameron](https://en.wikipedia.org/wiki/The_Decameron) by Giovanni Boccaccio
 - [2666](https://en.wikipedia.org/wiki/2666) by Roberto Bolaño
 - [Cosmicomics](https://en.wikipedia.org/wiki/Cosmicomics) by Italo Calvino
 - [Underworld](https://en.wikipedia.org/wiki/Underworld_(novel)) by Don DeLillo
