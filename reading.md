@@ -4,6 +4,7 @@ title: Reading
 permalink: /reading/
 ---
 
+<img src="/img/mnd.jpeg">
 Books I've read that I more generally recommend others to check out (only slightly categorized):
 
 ### Fiction:
