@@ -15,8 +15,6 @@ Among the responses to my tweets on those, one that stood out to me was someone 
 
 Well, random twitter user, you did a great job in pitching an irresitable project - so much so that I have gone ahead and done this myself:
 
-<a href="url"><img src="/img/zine.jpg" align="center" ></a>
-
 <object data="https://archive.org/download/it-feels-good-to-do-what-i-want/IT_FEELS_GOOD_TO_DO_WHAT_I_WANT.PDF" width="740" height="986" type='application/pdf'></object>
 
 The short zine goes over a bit on the basics of FOIA, some history of Black Flag, and the nature of the FBI's quick investigation into the band, pertaining to an interview they gave on a popular California radio station.
@@ -25,7 +23,9 @@ Its a bit of a niche medium for FOIA, but I really enjoyed making this - so much
 
 The PDF can be found on the Internet Archive [here](https://archive.org/details/it-feels-good-to-do-what-i-want), but I've also saved a copy of it within my FOIA repo on GitHub [here](https://github.com/RooneyMcNibNug/FOIA/blob/master/Responsive%20Docs/Black%20Flag/IT_FEELS_GOOD_TO_DO_WHAT_I_WANT.PDF).
 
-You can view this on your favorite PDF viewer or browser, or if you prefer to print a physical copy (like the image above), you can do so as long as you choose double-sided and booklet layouts for your print job.
+You can view this on your favorite PDF viewer or browser, or if you prefer to print a physical copy, you can do so as long as you choose double-sided and booklet layouts for your print job:
+
+<a href="url"><img src="/img/zine.jpg" align="center" ></a>
 
 I created this using a combination of [Scribus](https://www.scribus.net/) and [GIMP](https://www.gimp.org/), which went very smoothly.
 
