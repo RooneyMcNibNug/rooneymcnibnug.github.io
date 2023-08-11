@@ -17,7 +17,7 @@ Well, random twitter user, you did a great job in pitching an irresitable projec
 
 <a href="url"><img src="/img/zine.jpg" align="center" ></a>
 
-<object data="https://archive.org/download/it-feels-good-to-do-what-i-want/IT_FEELS_GOOD_TO_DO_WHAT_I_WANT.PDF" width="1000" height="1000" type='application/pdf'></object>
+<object data="https://archive.org/download/it-feels-good-to-do-what-i-want/IT_FEELS_GOOD_TO_DO_WHAT_I_WANT.PDF" width="740" height="986" type='application/pdf'></object>
 
 The short zine goes over a bit on the basics of FOIA, some history of Black Flag, and the nature of the FBI's quick investigation into the band, pertaining to an interview they gave on a popular California radio station.
 
