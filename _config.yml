@@ -16,7 +16,7 @@
 title: "All things are for all."
 #email: jake@lucyparsonslabs.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Jake. I'm interested in security (infosec/netsec/opsec), government transparency, and books. Computer crank, FOIA freak.
+  I'm Jake. I'm interested in privacy, security (infosec/netsec/opsec), government transparency, and books. Computer crank, FOIA freak.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rooneymcnibnug
